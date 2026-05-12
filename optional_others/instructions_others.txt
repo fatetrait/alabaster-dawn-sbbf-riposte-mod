@@ -1,0 +1,3 @@
+this is gonna contain other modifications i did. most of them will probably be inplace and i am lazy to explain bc they r worse probably
+
+malevolency replaces claio solas with carnellio's malevolency weapon. it doesn't look very good. to use it, find and replace the weapon spritesheet in terra/media with the modded spritesheet
