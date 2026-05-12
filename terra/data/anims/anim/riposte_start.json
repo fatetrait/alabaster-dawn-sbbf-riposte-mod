@@ -1,0 +1,37 @@
+{
+    "anims": {
+        "pRiposteStart": {
+            "frameCnt": 1,
+            "frameRepeat": 1,
+            "frames": [
+                0
+            ],
+            "loopStart": 0,
+            "repeat": false,
+            "flipX": false,
+            "flipY": false,
+            "sheet": "def",
+            "range": [
+                0,
+                0,
+                529,
+                85
+            ],
+            "tileCntX": 1,
+            "options": {
+                "faceSelect": 180
+            }
+        }
+    },
+    "spriteSheets": {
+        "def": {
+            "img": "media/fx/riposte_start.png",
+            "range": [
+                0,
+                0,
+                529,
+                85
+            ]
+        }
+    }
+}

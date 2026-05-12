@@ -1,0 +1,37 @@
+{
+    "anims": {
+        "pRiposteSigil": {
+            "frameCnt": 1,
+            "frameRepeat": 1,
+            "frames": [
+                0
+            ],
+            "loopStart": 0,
+            "repeat": false,
+            "flipX": false,
+            "flipY": false,
+            "sheet": "def",
+            "range": [
+                0,
+                0,
+                500,
+                500
+            ],
+            "tileCntX": 1,
+            "options": {
+                "faceSelect": 180
+            }
+        }
+    },
+    "spriteSheets": {
+        "def": {
+            "img": "media/fx/riposte_sigil.png",
+            "range": [
+                0,
+                0,
+                500,
+                500
+            ]
+        }
+    }
+}

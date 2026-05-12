@@ -1,0 +1,59 @@
+{
+    "anims": {
+        "pRiposteM": {
+            "faceExtendX": true,
+            "facing": "FACE_16_MIRR",
+            "frameCnt": 0,
+            "frameRepeat": 6,
+            "frames": [],
+            "loopStart": 0,
+            "repeat": false,
+            "flipX": false,
+            "flipY": false,
+            "sheet": "def",
+            "range": [
+                0,
+                0,
+                12,
+                20
+            ],
+            "tileCntX": 1,
+            "options": {
+                "faceSelect": 180
+            }
+        },
+        "pRiposteT": {
+            "faceExtendX": true,
+            "facing": "FACE_16_MIRR",
+            "frameCnt": 0,
+            "frameRepeat": 6,
+            "frames": [],
+            "loopStart": 0,
+            "repeat": false,
+            "flipX": false,
+            "flipY": false,
+            "sheet": "def",
+            "range": [
+                0,
+                20,
+                12,
+                20
+            ],
+            "tileCntX": 1,
+            "options": {
+                "faceSelect": 180
+            }
+        }
+    },
+    "spriteSheets": {
+        "def": {
+            "img": "media/fx/fx-riposte.png",
+            "range": [
+                0,
+                0,
+                672,
+                96
+            ]
+        }
+    }
+}

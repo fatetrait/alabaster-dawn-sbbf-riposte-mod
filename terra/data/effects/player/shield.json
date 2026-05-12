@@ -1,0 +1,4849 @@
+{
+    "effects": {
+        "parryBurst": {
+            "steps": [
+                {
+                    "type": "PLAY_RANDOM_SOUND",
+                    "repeat": false,
+                    "sequence": false,
+                    "settings": {
+                        "playback": {
+                            "fadeOut": 0.3
+                        },
+                        "speed": 0.7,
+                        "speedVariance": 0.05,
+                        "type": "GAMEPLAY",
+                        "volume": 0.95,
+                        "volumeVariance": 0.1
+                    },
+                    "sounds": [
+                        "media/audio/sfx/crosscode/hit-counter.ogg"
+                    ]
+                },
+                {
+                    "type": "PLAY_RANDOM_SOUND",
+                    "_skip": true,
+                    "settings": {
+                        "playback": {
+                            "end": 0.8,
+                            "fadeOut": 0.3,
+                            "start": 0.2
+                        },
+                        "speed": 0.6,
+                        "speedVariance": 0.1,
+                        "type": "GAMEPLAY",
+                        "volume": 0.54
+                    },
+                    "sounds": [
+                        "media/audio/sfx/action/boom/explosion-01.wav"
+                    ]
+                },
+                {
+                    "type": "PTC_CIRCLE",
+                    "anim": "ANI:anim.riposte#pRiposteM",
+                    "cancelable": true,
+                    "followTarget": 1,
+                    "key": "shd",
+                    "lighter": 0.1,
+                    "endDist": 0.75,
+                    "moveDuration": 1,
+                    "moveRotate": -7,
+                    "rotWithTime": true,
+                    "startDist": 0.5,
+                    "offset": [
+                        0,
+                        0,
+                        0.9375
+                    ],
+                    "pDuration": -1,
+                    "pScale": {
+                        "in": {
+                            "time": 0.3,
+                            "val": [
+                                1,
+                                1
+                            ]
+                        },
+                        "init": [
+                            0,
+                            0
+                        ],
+                        "out": {
+                            "time": 0.2,
+                            "val": [
+                                0,
+                                0
+                            ]
+                        }
+                    },
+                    "numPtc": 8
+                },
+                {
+                    "type": "PTC_CIRCLE",
+                    "anim": "ANI:anim.riposte_pop#pRipostePop",
+                    "zOrder": 9999,
+                    "lighter": 0.3,
+                    "cancelable": true,
+                    "followTarget": 1,
+                    "key": "shd",
+                    "endDist": 0.75,
+                    "moveDuration": 1,
+                    "moveRotate": -7,
+                    "rotWithTime": true,
+                    "startDist": 0.5,
+                    "offset": [
+                        0,
+                        -6,
+                        1.8
+                    ],
+                    "pDuration": -1,
+                    "pScale": {
+                        "in": {
+                            "time": 0.6,
+                            "val": [
+                                1,
+                                1
+                            ]
+                        },
+                        "init": [
+                            0.5,
+                            0.5
+                        ],
+                        "out": {
+                            "time": 0.2,
+                            "val": [
+                                0,
+                                0
+                            ]
+                        }
+                    },
+                    "angleStart": 22,
+                    "numPtc": 1
+                },
+                {
+                    "type": "PTC_CIRCLE",
+                    "anim": "ANI:anim.riposte#pRiposteT",
+                    "cancelable": true,
+                    "followTarget": 1,
+                    "key": "shd",
+                    "lighter": 0.1,
+                    "endDist": 0.75,
+                    "moveDuration": 1,
+                    "moveRotate": -7,
+                    "rotWithTime": true,
+                    "startDist": 0.5,
+                    "offset": [
+                        0,
+                        0,
+                        1.875
+                    ],
+                    "pDuration": -1,
+                    "pScale": {
+                        "in": {
+                            "time": 0.3,
+                            "val": [
+                                1,
+                                1
+                            ]
+                        },
+                        "init": [
+                            0,
+                            0
+                        ],
+                        "out": {
+                            "time": 0.2,
+                            "val": [
+                                0,
+                                0
+                            ]
+                        }
+                    },
+                    "numPtc": 8
+                },
+                {
+                    "type": "LIGHT",
+                    "followTarget": false,
+                    "handle": {
+                        "duration": 0.1,
+                        "fadeOut": 0.2
+                    },
+                    "light": {
+                        "prefab": "fx",
+                        "overrides": {
+                            "absorbShadow": 0,
+                            "absorption": 0.15,
+                            "color": [
+                                0,
+                                0.7568627595901489,
+                                1
+                            ],
+                            "diffuseAmount": 0,
+                            "hueShift": 0,
+                            "intensity": 1,
+                            "volumetricAmount": 1
+                        }
+                    },
+                    "radius": 2.77
+                },
+                {
+                    "type": "PTC_SINGLE",
+                    "alphaCut": 0.9,
+                    "angleVary": 95,
+                    "anim": "ANI:shape.round#shine2",
+                    "brightness": 0.3,
+                    "followTarget": 1,
+                    "lighter": 1,
+                    "pAlpha": {
+                        "in": {
+                            "spline": "EASE_IN",
+                            "val": 0
+                        },
+                        "init": 0.9
+                    },
+                    "pColor": {
+                        "in": {
+                            "val": [
+                                0,
+                                66,
+                                193
+                            ]
+                        },
+                        "init": [
+                            30,
+                            253,
+                            239
+                        ]
+                    },
+                    "pDuration": 0.21666666666666667,
+                    "pScale": {
+                        "in": {
+                            "spline": "EASE_OUT_STRONG",
+                            "val": [
+                                1.5,
+                                1.6
+                            ]
+                        },
+                        "init": [
+                            0.8,
+                            0.8
+                        ]
+                    },
+                    "zOrder": 11
+                },
+                {
+                    "type": "PTC_CIRCLE_CURL",
+                    "alphaCut": 0.45,
+                    "anim": "ANI:small.dots#lineS2",
+                    "brightness": 0.35,
+                    "forces": {
+                        "attached": false,
+                        "drag": 5,
+                        "gravity": [
+                            0,
+                            0,
+                            0
+                        ],
+                        "initVelocity": [
+                            0,
+                            -12,
+                            0
+                        ],
+                        "rotVel": true,
+                        "vortexInForce": 0,
+                        "vortexPos": [
+                            0,
+                            0,
+                            0
+                        ],
+                        "vortexShape": "Z_SPHERE",
+                        "vortexSpinForce": 4
+                    },
+                    "normalize": false,
+                    "panning": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "rotToDir": "FAST",
+                    "rotateSpeed": 0,
+                    "scale": 12,
+                    "speed": 4,
+                    "spread": 1,
+                    "lighter": 1,
+                    "pAlpha": {
+                        "in": {
+                            "val": 0
+                        },
+                        "init": 1
+                    },
+                    "pColor": [
+                        69,
+                        255,
+                        255
+                    ],
+                    "pDuration": [
+                        0.4,
+                        0.8
+                    ],
+                    "pScale": {
+                        "in": {
+                            "val": [
+                                1,
+                                1
+                            ]
+                        },
+                        "init": [
+                            1,
+                            1
+                        ]
+                    },
+                    "numPtc": 25,
+                    "rotAxis": "SCREEN",
+                    "startDist": [
+                        0,
+                        1.55
+                    ],
+                    "zOrder": 128
+                },
+                {
+                    "type": "PTC_SINGLE",
+                    "_skip": true,
+                    "alphaCut": 0.9,
+                    "anim": "ANI:shape.round#circle1",
+                    "brightness": 0.1,
+                    "cancelable": true,
+                    "followTarget": 1,
+                    "lighter": 1,
+                    "offset": [
+                        0,
+                        0,
+                        0.875
+                    ],
+                    "pAlpha": {
+                        "in": {
+                            "val": 0
+                        },
+                        "init": 0.55
+                    },
+                    "pColor": {
+                        "in": {
+                            "val": [
+                                0,
+                                66,
+                                193
+                            ]
+                        },
+                        "init": [
+                            30,
+                            253,
+                            239
+                        ]
+                    },
+                    "pDuration": 0.25,
+                    "pScale": {
+                        "in": {
+                            "spline": "EASE_SOUND",
+                            "val": [
+                                0.8,
+                                0.8
+                            ]
+                        },
+                        "init": [
+                            0.5,
+                            0.5
+                        ]
+                    },
+                    "sheer": 1,
+                    "yShort": 4
+                },
+                {
+                    "type": "PTC_SINGLE",
+                    "alphaCut": 0.9,
+                    "anim": "ANI:shape.round#circle2",
+                    "brightness": 0.1,
+                    "followTarget": 1,
+                    "lighter": 1,
+                    "pAlpha": {
+                        "in": {
+                            "val": 0
+                        },
+                        "init": 0.9
+                    },
+                    "pColor": {
+                        "in": {
+                            "val": [
+                                0,
+                                66,
+                                193
+                            ]
+                        },
+                        "init": [
+                            30,
+                            253,
+                            239
+                        ]
+                    },
+                    "pDuration": 0.21666666666666667,
+                    "pRotate": {
+                        "in": {
+                            "spline": "EASE_OUT",
+                            "val": -64
+                        },
+                        "init": 0
+                    },
+                    "pScale": {
+                        "in": {
+                            "spline": "EASE_OUT_STRONG",
+                            "val": [
+                                1.3,
+                                1.3
+                            ]
+                        },
+                        "init": [
+                            0.2,
+                            0.2
+                        ]
+                    },
+                    "postRot": 10,
+                    "sheer": 1,
+                    "yShort": 4,
+                    "zOrder": 28
+                },
+                {
+                    "type": "PTC_SINGLE",
+                    "_skip": true,
+                    "alphaCut": 0.9,
+                    "anim": "ANI:shape.round#circle2",
+                    "cancelable": true,
+                    "followTarget": 1,
+                    "lighter": 1,
+                    "offset": [
+                        0,
+                        0,
+                        1.75
+                    ],
+                    "pAlpha": {
+                        "in": {
+                            "val": 0
+                        },
+                        "init": 0.55
+                    },
+                    "pColor": {
+                        "in": {
+                            "val": [
+                                0,
+                                66,
+                                193
+                            ]
+                        },
+                        "init": [
+                            30,
+                            253,
+                            239
+                        ]
+                    },
+                    "pDuration": 0.3,
+                    "pScale": {
+                        "in": {
+                            "spline": "EASE_SOUND",
+                            "val": [
+                                1.8,
+                                1.8
+                            ]
+                        },
+                        "init": [
+                            0.5,
+                            0.5
+                        ]
+                    },
+                    "postRot": 9,
+                    "sheer": 1,
+                    "yShort": 4
+                },
+                {
+                    "type": "PTC_SINGLE",
+                    "alphaCut": 0.8,
+                    "anim": "ANI:shape.round#circle2",
+                    "brightness": 0.15,
+                    "followTarget": 1,
+                    "lighter": 1,
+                    "pAlpha": {
+                        "in": {
+                            "val": 0
+                        },
+                        "init": 0.5
+                    },
+                    "pColor": {
+                        "in": {
+                            "val": [
+                                0,
+                                66,
+                                193
+                            ]
+                        },
+                        "init": [
+                            30,
+                            253,
+                            239
+                        ]
+                    },
+                    "pDuration": 0.23333333333333334,
+                    "pRotate": {
+                        "in": {
+                            "spline": "EASE_OUT",
+                            "val": 64
+                        },
+                        "init": 0
+                    },
+                    "pScale": {
+                        "in": {
+                            "spline": "EASE_OUT_STRONG",
+                            "val": [
+                                2,
+                                2
+                            ]
+                        },
+                        "init": [
+                            0.2,
+                            0.2
+                        ]
+                    },
+                    "postRot": -11,
+                    "scaleVary": [
+                        0.2,
+                        0.2
+                    ],
+                    "sheer": 1,
+                    "yShort": 4,
+                    "zOrder": 24
+                },
+                {
+                    "type": "PTC_SINGLE",
+                    "_skip": true,
+                    "alphaCut": 0.9,
+                    "anim": "ANI:shape.round#circle1",
+                    "cancelable": true,
+                    "followTarget": 1,
+                    "lighter": 1,
+                    "offset": [
+                        0,
+                        0,
+                        0.375
+                    ],
+                    "pAlpha": {
+                        "in": {
+                            "val": 0
+                        },
+                        "init": 0.55
+                    },
+                    "pColor": {
+                        "in": {
+                            "val": [
+                                0,
+                                66,
+                                193
+                            ]
+                        },
+                        "init": [
+                            30,
+                            253,
+                            239
+                        ]
+                    },
+                    "pDuration": 0.21666666666666667,
+                    "pScale": {
+                        "in": {
+                            "spline": "EASE_SOUND",
+                            "val": [
+                                0.7,
+                                0.7
+                            ]
+                        },
+                        "init": [
+                            0.5,
+                            0.5
+                        ]
+                    },
+                    "sheer": 1,
+                    "yShort": 4
+                },
+                {
+                    "type": "WAIT",
+                    "time": 0.25
+                }
+            ]
+        },
+        "parryBurstSmall": {
+            "steps": [
+                {
+                    "type": "PLAY_RANDOM_SOUND",
+                    "repeat": false,
+                    "sequence": false,
+                    "settings": {
+                        "playback": {
+                            "fadeOut": 0.3
+                        },
+                        "speed": 0.95,
+                        "speedVariance": 0.05,
+                        "type": "GAMEPLAY",
+                        "volume": 0.95,
+                        "volumeVariance": 0.1
+                    },
+                    "sounds": [
+                        "media/audio/sfx/crosscode/hit-counter.ogg"
+                    ]
+                },
+                {
+                    "type": "PLAY_RANDOM_SOUND",
+                    "_skip": true,
+                    "settings": {
+                        "playback": {
+                            "end": 0.8,
+                            "fadeOut": 0.3,
+                            "start": 0.2
+                        },
+                        "speed": 0.6,
+                        "speedVariance": 0.1,
+                        "type": "GAMEPLAY",
+                        "volume": 0.54
+                    },
+                    "sounds": [
+                        "media/audio/sfx/action/boom/explosion-01.wav"
+                    ]
+                },
+                {
+                    "type": "LIGHT",
+                    "followTarget": false,
+                    "handle": {
+                        "duration": 0.1,
+                        "fadeOut": 0.2
+                    },
+                    "light": {
+                        "prefab": "fx",
+                        "overrides": {
+                            "absorbShadow": 0,
+                            "absorption": 0.15,
+                            "color": [
+                                0,
+                                0.7568627595901489,
+                                1
+                            ],
+                            "diffuseAmount": 0,
+                            "hueShift": 0,
+                            "intensity": 1,
+                            "volumetricAmount": 1
+                        }
+                    },
+                    "radius": 2.77
+                },
+                {
+                    "type": "PTC_CIRCLE",
+                    "anim": "ANI:anim.riposte_pop#pRipostePop",
+                    "zOrder": 9999,
+                    "lighter": 0.3,
+                    "cancelable": true,
+                    "followTarget": 1,
+                    "key": "shd",
+                    "endDist": 0.75,
+                    "moveDuration": 1,
+                    "moveRotate": -7,
+                    "rotWithTime": true,
+                    "startDist": 0.5,
+                    "offset": [
+                        0,
+                        -6,
+                        1.8
+                    ],
+                    "pDuration": -1,
+                    "pScale": {
+                        "in": {
+                            "time": 0.6,
+                            "val": [
+                                1,
+                                1
+                            ]
+                        },
+                        "init": [
+                            0.5,
+                            0.5
+                        ],
+                        "out": {
+                            "time": 0.2,
+                            "val": [
+                                0,
+                                0
+                            ]
+                        }
+                    },
+                    "angleStart": 22,
+                    "numPtc": 1
+                },
+                {
+                    "type": "PTC_CIRCLE",
+                    "anim": "ANI:anim.riposte#pRiposteM",
+                    "cancelable": true,
+                    "followTarget": 1,
+                    "key": "shd",
+                    "lighter": 0.1,
+                    "endDist": 0.75,
+                    "moveDuration": 1,
+                    "moveRotate": -7,
+                    "rotWithTime": true,
+                    "startDist": 0.5,
+                    "offset": [
+                        0,
+                        0,
+                        0.9375
+                    ],
+                    "pDuration": -1,
+                    "pScale": {
+                        "in": {
+                            "time": 0.3,
+                            "val": [
+                                1,
+                                1
+                            ]
+                        },
+                        "init": [
+                            0,
+                            0
+                        ],
+                        "out": {
+                            "time": 0.2,
+                            "val": [
+                                0,
+                                0
+                            ]
+                        }
+                    },
+                    "numPtc": 8
+                },
+                {
+                    "type": "PTC_CIRCLE",
+                    "anim": "ANI:anim.riposte#pRiposteT",
+                    "cancelable": true,
+                    "followTarget": 1,
+                    "key": "shd",
+                    "lighter": 0.1,
+                    "endDist": 0.75,
+                    "moveDuration": 1,
+                    "moveRotate": -7,
+                    "rotWithTime": true,
+                    "startDist": 0.5,
+                    "offset": [
+                        0,
+                        0,
+                        1.875
+                    ],
+                    "pDuration": -1,
+                    "pScale": {
+                        "in": {
+                            "time": 0.3,
+                            "val": [
+                                1,
+                                1
+                            ]
+                        },
+                        "init": [
+                            0,
+                            0
+                        ],
+                        "out": {
+                            "time": 0.2,
+                            "val": [
+                                0,
+                                0
+                            ]
+                        }
+                    },
+                    "numPtc": 8
+                },
+                {
+                    "type": "PTC_SINGLE",
+                    "alphaCut": 0.9,
+                    "angleVary": 95,
+                    "anim": "ANI:shape.round#shine2",
+                    "brightness": 0.3,
+                    "followTarget": 1,
+                    "lighter": 1,
+                    "pAlpha": {
+                        "in": {
+                            "spline": "EASE_IN",
+                            "val": 0
+                        },
+                        "init": 0.9
+                    },
+                    "pColor": {
+                        "in": {
+                            "val": [
+                                0,
+                                66,
+                                193
+                            ]
+                        },
+                        "init": [
+                            30,
+                            253,
+                            239
+                        ]
+                    },
+                    "pDuration": 0.21666666666666667,
+                    "pScale": {
+                        "in": {
+                            "spline": "EASE_OUT_STRONG",
+                            "val": [
+                                1,
+                                1
+                            ]
+                        },
+                        "init": [
+                            0.5,
+                            0.5
+                        ]
+                    },
+                    "zOrder": 11
+                },
+                {
+                    "type": "PTC_CIRCLE_CURL",
+                    "alphaCut": 0.45,
+                    "anim": "ANI:small.dots#lineS2",
+                    "brightness": 0.35,
+                    "forces": {
+                        "attached": false,
+                        "drag": 5,
+                        "gravity": [
+                            0,
+                            0,
+                            0
+                        ],
+                        "initVelocity": [
+                            0,
+                            -12,
+                            0
+                        ],
+                        "rotVel": true,
+                        "vortexInForce": 0,
+                        "vortexPos": [
+                            0,
+                            0,
+                            0
+                        ],
+                        "vortexShape": "Z_SPHERE",
+                        "vortexSpinForce": 4
+                    },
+                    "normalize": false,
+                    "panning": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "rotToDir": "FAST",
+                    "rotateSpeed": 0,
+                    "scale": 12,
+                    "speed": 4,
+                    "spread": 1,
+                    "lighter": 1,
+                    "pAlpha": {
+                        "in": {
+                            "val": 0
+                        },
+                        "init": 1
+                    },
+                    "pColor": [
+                        69,
+                        255,
+                        255
+                    ],
+                    "pDuration": [
+                        0.4,
+                        0.8
+                    ],
+                    "pScale": {
+                        "in": {
+                            "val": [
+                                1,
+                                1
+                            ]
+                        },
+                        "init": [
+                            1,
+                            1
+                        ]
+                    },
+                    "numPtc": 5,
+                    "rotAxis": "SCREEN",
+                    "startDist": [
+                        0,
+                        1.55
+                    ],
+                    "zOrder": 128
+                },
+                {
+                    "type": "PTC_SINGLE",
+                    "_skip": true,
+                    "alphaCut": 0.9,
+                    "anim": "ANI:shape.round#circle1",
+                    "brightness": 0.1,
+                    "cancelable": true,
+                    "followTarget": 1,
+                    "lighter": 1,
+                    "offset": [
+                        0,
+                        0,
+                        0.875
+                    ],
+                    "pAlpha": {
+                        "in": {
+                            "val": 0
+                        },
+                        "init": 0.55
+                    },
+                    "pColor": {
+                        "in": {
+                            "val": [
+                                0,
+                                66,
+                                193
+                            ]
+                        },
+                        "init": [
+                            30,
+                            253,
+                            239
+                        ]
+                    },
+                    "pDuration": 0.25,
+                    "pScale": {
+                        "in": {
+                            "spline": "EASE_SOUND",
+                            "val": [
+                                0.8,
+                                0.8
+                            ]
+                        },
+                        "init": [
+                            0.5,
+                            0.5
+                        ]
+                    },
+                    "sheer": 1,
+                    "yShort": 4
+                },
+                {
+                    "type": "PTC_SINGLE",
+                    "alphaCut": 0.6,
+                    "anim": "ANI:shape.round#circle2",
+                    "brightness": 0.1,
+                    "followTarget": 1,
+                    "lighter": 1,
+                    "pAlpha": {
+                        "in": {
+                            "val": 0
+                        },
+                        "init": 0.9
+                    },
+                    "pColor": {
+                        "in": {
+                            "val": [
+                                0,
+                                66,
+                                193
+                            ]
+                        },
+                        "init": [
+                            30,
+                            253,
+                            239
+                        ]
+                    },
+                    "pDuration": 0.2,
+                    "pRotate": {
+                        "in": {
+                            "spline": "EASE_OUT",
+                            "val": -64
+                        },
+                        "init": 0
+                    },
+                    "pScale": {
+                        "in": {
+                            "spline": "EASE_OUT_STRONG",
+                            "val": [
+                                1,
+                                1
+                            ]
+                        },
+                        "init": [
+                            0.2,
+                            0.2
+                        ]
+                    },
+                    "postRot": 10,
+                    "sheer": 1,
+                    "yShort": 4,
+                    "zOrder": 28
+                },
+                {
+                    "type": "PTC_SINGLE",
+                    "_skip": true,
+                    "alphaCut": 0.9,
+                    "anim": "ANI:shape.round#circle2",
+                    "cancelable": true,
+                    "followTarget": 1,
+                    "lighter": 1,
+                    "offset": [
+                        0,
+                        0,
+                        1.75
+                    ],
+                    "pAlpha": {
+                        "in": {
+                            "val": 0
+                        },
+                        "init": 0.55
+                    },
+                    "pColor": {
+                        "in": {
+                            "val": [
+                                0,
+                                66,
+                                193
+                            ]
+                        },
+                        "init": [
+                            30,
+                            253,
+                            239
+                        ]
+                    },
+                    "pDuration": 0.3,
+                    "pScale": {
+                        "in": {
+                            "spline": "EASE_SOUND",
+                            "val": [
+                                1.8,
+                                1.8
+                            ]
+                        },
+                        "init": [
+                            0.5,
+                            0.5
+                        ]
+                    },
+                    "postRot": 9,
+                    "sheer": 1,
+                    "yShort": 4
+                },
+                {
+                    "type": "PTC_SINGLE",
+                    "alphaCut": 0.6,
+                    "anim": "ANI:shape.round#circle2",
+                    "brightness": 0.15,
+                    "followTarget": 1,
+                    "lighter": 1,
+                    "pAlpha": {
+                        "in": {
+                            "val": 0
+                        },
+                        "init": 0.5
+                    },
+                    "pColor": {
+                        "in": {
+                            "val": [
+                                0,
+                                66,
+                                193
+                            ]
+                        },
+                        "init": [
+                            30,
+                            253,
+                            239
+                        ]
+                    },
+                    "pDuration": 0.2,
+                    "pRotate": {
+                        "in": {
+                            "spline": "EASE_OUT",
+                            "val": 64
+                        },
+                        "init": 0
+                    },
+                    "pScale": {
+                        "in": {
+                            "spline": "EASE_OUT_STRONG",
+                            "val": [
+                                1.5,
+                                1.5
+                            ]
+                        },
+                        "init": [
+                            0.2,
+                            0.2
+                        ]
+                    },
+                    "postRot": -11,
+                    "scaleVary": [
+                        0.2,
+                        0.2
+                    ],
+                    "sheer": 1,
+                    "yShort": 4,
+                    "zOrder": 24
+                },
+                {
+                    "type": "PTC_SINGLE",
+                    "_skip": true,
+                    "alphaCut": 0.9,
+                    "anim": "ANI:shape.round#circle1",
+                    "cancelable": true,
+                    "followTarget": 1,
+                    "lighter": 1,
+                    "offset": [
+                        0,
+                        0,
+                        0.375
+                    ],
+                    "pAlpha": {
+                        "in": {
+                            "val": 0
+                        },
+                        "init": 0.55
+                    },
+                    "pColor": {
+                        "in": {
+                            "val": [
+                                0,
+                                66,
+                                193
+                            ]
+                        },
+                        "init": [
+                            30,
+                            253,
+                            239
+                        ]
+                    },
+                    "pDuration": 0.21666666666666667,
+                    "pScale": {
+                        "in": {
+                            "spline": "EASE_SOUND",
+                            "val": [
+                                0.7,
+                                0.7
+                            ]
+                        },
+                        "init": [
+                            0.5,
+                            0.5
+                        ]
+                    },
+                    "sheer": 1,
+                    "yShort": 4
+                },
+                {
+                    "type": "WAIT",
+                    "time": 0.25
+                }
+            ]
+        },
+        "parryBurst2": {
+            "steps": [
+                {
+                    "type": "PLAY_RANDOM_SOUND",
+                    "settings": {
+                        "playback": {
+                            "fadeOut": 0.3
+                        },
+                        "speed": 0.7,
+                        "speedVariance": 0.05,
+                        "type": "GAMEPLAY",
+                        "volume": 0.75,
+                        "volumeVariance": 0.1
+                    },
+                    "sounds": [
+                        "media/audio/sfx/crosscode/hit-counter.ogg"
+                    ]
+                },
+                {
+                    "type": "PLAY_RANDOM_SOUND",
+                    "_skip": true,
+                    "settings": {
+                        "playback": {
+                            "end": 0.8,
+                            "fadeOut": 0.3,
+                            "start": 0.2
+                        },
+                        "speed": 0.6,
+                        "speedVariance": 0.1,
+                        "type": "GAMEPLAY",
+                        "volume": 0.54
+                    },
+                    "sounds": [
+                        "media/audio/sfx/action/boom/explosion-01.wav"
+                    ]
+                },
+                {
+                    "type": "LIGHT",
+                    "followTarget": false,
+                    "handle": {
+                        "duration": 0.1,
+                        "fadeOut": 0.2
+                    },
+                    "light": {
+                        "prefab": "fx",
+                        "overrides": {
+                            "absorbShadow": 0,
+                            "absorption": 0.15,
+                            "color": [
+                                0,
+                                0.7568627595901489,
+                                1
+                            ],
+                            "diffuseAmount": 0,
+                            "hueShift": 0,
+                            "intensity": 1,
+                            "volumetricAmount": 1
+                        }
+                    },
+                    "radius": 2.77
+                },
+                {
+                    "type": "PTC_CIRCLE",
+                    "anim": "ANI:anim.riposte_pop#pRipostePop",
+                    "zOrder": 9999,
+                    "lighter": 0.3,
+                    "cancelable": true,
+                    "followTarget": 1,
+                    "key": "shd",
+                    "endDist": 0.75,
+                    "moveDuration": 1,
+                    "moveRotate": -7,
+                    "rotWithTime": true,
+                    "startDist": 0.5,
+                    "offset": [
+                        0,
+                        -6,
+                        1.8
+                    ],
+                    "pDuration": -1,
+                    "pScale": {
+                        "in": {
+                            "time": 0.6,
+                            "val": [
+                                1,
+                                1
+                            ]
+                        },
+                        "init": [
+                            0.5,
+                            0.5
+                        ],
+                        "out": {
+                            "time": 0.2,
+                            "val": [
+                                0,
+                                0
+                            ]
+                        }
+                    },
+                    "angleStart": 22,
+                    "numPtc": 1
+                },
+                {
+                    "type": "PTC_CIRCLE",
+                    "anim": "ANI:anim.riposte#pRiposteM",
+                    "cancelable": true,
+                    "followTarget": 1,
+                    "key": "shd",
+                    "lighter": 0.1,
+                    "endDist": 0.75,
+                    "moveDuration": 1,
+                    "moveRotate": -7,
+                    "rotWithTime": true,
+                    "startDist": 0.5,
+                    "offset": [
+                        0,
+                        0,
+                        0.9375
+                    ],
+                    "pDuration": -1,
+                    "pScale": {
+                        "in": {
+                            "time": 0.3,
+                            "val": [
+                                1,
+                                1
+                            ]
+                        },
+                        "init": [
+                            0,
+                            0
+                        ],
+                        "out": {
+                            "time": 0.2,
+                            "val": [
+                                0,
+                                0
+                            ]
+                        }
+                    },
+                    "numPtc": 8
+                },
+                {
+                    "type": "PTC_CIRCLE",
+                    "anim": "ANI:anim.riposte#pRiposteT",
+                    "cancelable": true,
+                    "followTarget": 1,
+                    "key": "shd",
+                    "lighter": 0.1,
+                    "endDist": 0.75,
+                    "moveDuration": 1,
+                    "moveRotate": -7,
+                    "rotWithTime": true,
+                    "startDist": 0.5,
+                    "offset": [
+                        0,
+                        0,
+                        1.875
+                    ],
+                    "pDuration": -1,
+                    "pScale": {
+                        "in": {
+                            "time": 0.3,
+                            "val": [
+                                1,
+                                1
+                            ]
+                        },
+                        "init": [
+                            0,
+                            0
+                        ],
+                        "out": {
+                            "time": 0.2,
+                            "val": [
+                                0,
+                                0
+                            ]
+                        }
+                    },
+                    "numPtc": 8
+                },
+                {
+                    "type": "PTC_SINGLE",
+                    "alphaCut": 0.9,
+                    "angleVary": 95,
+                    "anim": "ANI:shape.round#shine2",
+                    "brightness": 0.3,
+                    "followTarget": 1,
+                    "lighter": 1,
+                    "pAlpha": {
+                        "in": {
+                            "spline": "EASE_IN",
+                            "val": 0
+                        },
+                        "init": 0.9
+                    },
+                    "pColor": {
+                        "in": {
+                            "val": [
+                                0,
+                                66,
+                                193
+                            ]
+                        },
+                        "init": [
+                            30,
+                            253,
+                            239
+                        ]
+                    },
+                    "pDuration": 0.21666666666666667,
+                    "pScale": {
+                        "in": {
+                            "spline": "EASE_OUT_STRONG",
+                            "val": [
+                                1.5,
+                                1.6
+                            ]
+                        },
+                        "init": [
+                            0.8,
+                            0.8
+                        ]
+                    },
+                    "zOrder": 11
+                },
+                {
+                    "type": "PTC_CIRCLE_CURL",
+                    "alphaCut": 0.45,
+                    "anim": "ANI:small.dots#lineS2",
+                    "brightness": 0.6,
+                    "forces": {
+                        "attached": false,
+                        "drag": 5,
+                        "gravity": [
+                            0,
+                            0,
+                            0
+                        ],
+                        "initVelocity": [
+                            0,
+                            -12,
+                            0
+                        ],
+                        "rotVel": true,
+                        "vortexInForce": 0,
+                        "vortexPos": [
+                            0,
+                            0,
+                            0
+                        ],
+                        "vortexShape": "Z_SPHERE",
+                        "vortexSpinForce": 4
+                    },
+                    "normalize": false,
+                    "panning": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "rotToDir": "FAST",
+                    "rotateSpeed": 0,
+                    "scale": 12,
+                    "speed": 4,
+                    "spread": 1,
+                    "lighter": 1,
+                    "pAlpha": {
+                        "in": {
+                            "val": 0
+                        },
+                        "init": 1
+                    },
+                    "pColor": [
+                        69,
+                        255,
+                        255
+                    ],
+                    "pDuration": [
+                        0.4,
+                        0.6
+                    ],
+                    "pScale": {
+                        "in": {
+                            "val": [
+                                1,
+                                1
+                            ]
+                        },
+                        "init": [
+                            1,
+                            1
+                        ]
+                    },
+                    "numPtc": 40,
+                    "rotAxis": "SCREEN",
+                    "startDist": [
+                        0,
+                        1.55
+                    ],
+                    "zOrder": 128
+                },
+                {
+                    "type": "PTC_SINGLE",
+                    "_skip": true,
+                    "alphaCut": 0.9,
+                    "anim": "ANI:shape.round#circle1",
+                    "brightness": 0.1,
+                    "cancelable": true,
+                    "followTarget": 1,
+                    "lighter": 1,
+                    "offset": [
+                        0,
+                        0,
+                        0.875
+                    ],
+                    "pAlpha": {
+                        "in": {
+                            "val": 0
+                        },
+                        "init": 0.55
+                    },
+                    "pColor": {
+                        "in": {
+                            "val": [
+                                0,
+                                66,
+                                193
+                            ]
+                        },
+                        "init": [
+                            30,
+                            253,
+                            239
+                        ]
+                    },
+                    "pDuration": 0.25,
+                    "pScale": {
+                        "in": {
+                            "spline": "EASE_SOUND",
+                            "val": [
+                                0.8,
+                                0.8
+                            ]
+                        },
+                        "init": [
+                            0.5,
+                            0.5
+                        ]
+                    },
+                    "sheer": 1,
+                    "yShort": 4
+                },
+                {
+                    "type": "PTC_SINGLE",
+                    "alphaCut": 0.9,
+                    "anim": "ANI:shape.round#circle2",
+                    "brightness": 0.1,
+                    "followTarget": 1,
+                    "lighter": 1,
+                    "pAlpha": {
+                        "in": {
+                            "val": 0
+                        },
+                        "init": 0.9
+                    },
+                    "pColor": {
+                        "in": {
+                            "val": [
+                                0,
+                                66,
+                                193
+                            ]
+                        },
+                        "init": [
+                            30,
+                            253,
+                            239
+                        ]
+                    },
+                    "pDuration": 0.21666666666666667,
+                    "pRotate": {
+                        "in": {
+                            "spline": "EASE_OUT",
+                            "val": -64
+                        },
+                        "init": 0
+                    },
+                    "pScale": {
+                        "in": {
+                            "spline": "EASE_OUT_STRONG",
+                            "val": [
+                                1.5,
+                                1.5
+                            ]
+                        },
+                        "init": [
+                            0.2,
+                            0.2
+                        ]
+                    },
+                    "postRot": 10,
+                    "sheer": 1,
+                    "yShort": 4,
+                    "zOrder": 28
+                },
+                {
+                    "type": "PTC_SINGLE",
+                    "_skip": true,
+                    "alphaCut": 0.9,
+                    "anim": "ANI:shape.round#circle2",
+                    "cancelable": true,
+                    "followTarget": 1,
+                    "lighter": 1,
+                    "offset": [
+                        0,
+                        0,
+                        1.75
+                    ],
+                    "pAlpha": {
+                        "in": {
+                            "val": 0
+                        },
+                        "init": 0.55
+                    },
+                    "pColor": {
+                        "in": {
+                            "val": [
+                                0,
+                                66,
+                                193
+                            ]
+                        },
+                        "init": [
+                            30,
+                            253,
+                            239
+                        ]
+                    },
+                    "pDuration": 0.3,
+                    "pScale": {
+                        "in": {
+                            "spline": "EASE_SOUND",
+                            "val": [
+                                1.8,
+                                1.8
+                            ]
+                        },
+                        "init": [
+                            0.5,
+                            0.5
+                        ]
+                    },
+                    "postRot": 9,
+                    "sheer": 1,
+                    "yShort": 4
+                },
+                {
+                    "type": "PTC_SINGLE",
+                    "alphaCut": 0.9,
+                    "anim": "ANI:shape.round#circle2",
+                    "brightness": 0.15,
+                    "followTarget": 1,
+                    "lighter": 1,
+                    "pAlpha": {
+                        "in": {
+                            "val": 0
+                        },
+                        "init": 0.55
+                    },
+                    "pColor": {
+                        "in": {
+                            "val": [
+                                0,
+                                66,
+                                193
+                            ]
+                        },
+                        "init": [
+                            30,
+                            253,
+                            239
+                        ]
+                    },
+                    "pDuration": 0.23333333333333334,
+                    "pRotate": {
+                        "in": {
+                            "spline": "EASE_OUT",
+                            "val": 64
+                        },
+                        "init": 0
+                    },
+                    "pScale": {
+                        "in": {
+                            "spline": "EASE_OUT_STRONG",
+                            "val": [
+                                1.5,
+                                1.5
+                            ]
+                        },
+                        "init": [
+                            0.2,
+                            0.2
+                        ]
+                    },
+                    "postRot": -11,
+                    "scaleVary": [
+                        0.2,
+                        0.2
+                    ],
+                    "sheer": 1,
+                    "yShort": 4,
+                    "zOrder": 24
+                },
+                {
+                    "type": "PTC_SINGLE",
+                    "_skip": true,
+                    "alphaCut": 0.9,
+                    "anim": "ANI:shape.round#circle1",
+                    "cancelable": true,
+                    "followTarget": 1,
+                    "lighter": 1,
+                    "offset": [
+                        0,
+                        0,
+                        0.375
+                    ],
+                    "pAlpha": {
+                        "in": {
+                            "val": 0
+                        },
+                        "init": 0.55
+                    },
+                    "pColor": {
+                        "in": {
+                            "val": [
+                                0,
+                                66,
+                                193
+                            ]
+                        },
+                        "init": [
+                            30,
+                            253,
+                            239
+                        ]
+                    },
+                    "pDuration": 0.21666666666666667,
+                    "pScale": {
+                        "in": {
+                            "spline": "EASE_SOUND",
+                            "val": [
+                                0.7,
+                                0.7
+                            ]
+                        },
+                        "init": [
+                            0.5,
+                            0.5
+                        ]
+                    },
+                    "sheer": 1,
+                    "yShort": 4
+                },
+                {
+                    "type": "WAIT",
+                    "time": 0.25
+                }
+            ]
+        },
+        "shield": {
+            "steps": [
+                {
+                    "type": "PTC_CIRCLE",
+                    "anim": "ANI:anim.riposte_start#pRiposteStart",
+                    "cancelable": true,
+                    "followTarget": 1,
+                    "key": "shd",
+                    "endDist": 0.75,
+                    "moveDuration": 1,
+                    "moveRotate": -7,
+                    "rotWithTime": true,
+                    "startDist": 0.5,
+                    "zOrder": 9999,
+                    "lighter": 0.3,
+                    "offset": [
+                        0,
+                        -10,
+                        1.8
+                    ],
+                    "pDuration": -1,
+                    "pScale": {
+                        "in": {
+                            "time": 0.6,
+                            "val": [
+                                1,
+                                1
+                            ]
+                        },
+                        "init": [
+                            0.5,
+                            0.5
+                        ],
+                        "out": {
+                            "time": 0.2,
+                            "val": [
+                                0,
+                                0
+                            ]
+                        }
+                    },
+                    "angleStart": 22,
+                    "numPtc": 1
+                },
+                {
+                    "type": "PTC_CIRCLE",
+                    "anim": "ANI:anim.riposte_sigil#pRiposteSigil",
+                    "cancelable": true,
+                    "followTarget": 1,
+                    "key": "shd",
+                    "endDist": 0.75,
+                    "moveDuration": 1,
+                    "moveRotate": -7,
+                    "rotWithTime": true,
+                    "startDist": 0.5,
+                    "zOrder": 9999,
+                    "lighter": 0.3,
+                    "offset": [
+                        0,
+                        -7,
+                        1.8
+                    ],
+                    "pDuration": -1,
+                    "pScale": {
+                        "in": {
+                            "time": 0.6,
+                            "val": [
+                                0.1,
+                                0.1
+                            ]
+                        },
+                        "init": [
+                            0.05,
+                            0.05
+                        ],
+                        "out": {
+                            "time": 0.2,
+                            "val": [
+                                0,
+                                0
+                            ]
+                        }
+                    },
+                    "angleStart": 22,
+                    "numPtc": 1
+                },
+                {
+                    "type": "PTC_SPHERE",
+                    "alphaCut": 0.35,
+                    "anim": "ANI:small.dots#star1",
+                    "brightness": 0.55,
+                    "cancelable": true,
+                    "followTarget": 1,
+                    "lighter": 1,
+                    "addEndDist": true,
+                    "endDist": 0.1,
+                    "moveRotate": [
+                        -25,
+                        -10
+                    ],
+                    "startDist": 0.85,
+                    "offset": [
+                        0,
+                        0,
+                        1.25
+                    ],
+                    "pAlpha": {
+                        "in": {
+                            "val": 0
+                        },
+                        "init": 1
+                    },
+                    "pColor": [
+                        0,
+                        163,
+                        255
+                    ],
+                    "pDuration": 0.31666666666666665,
+                    "angleRange": 0,
+                    "circles": 3,
+                    "numPtc": 32,
+                    "uniRand": 0.5,
+                    "zRange": [
+                        -0.8,
+                        0.7
+                    ],
+                    "zScale": 1.6
+                },
+                {
+                    "type": "PTC_SINGLE",
+                    "alphaCut": 0.9,
+                    "anim": "ANI:shape.round#circle1",
+                    "brightness": 0.1,
+                    "cancelable": true,
+                    "followTarget": 1,
+                    "lighter": 1,
+                    "offset": [
+                        0,
+                        0,
+                        0.875
+                    ],
+                    "pAlpha": {
+                        "in": {
+                            "val": 0
+                        },
+                        "init": 0.55
+                    },
+                    "pColor": {
+                        "in": {
+                            "val": [
+                                0,
+                                66,
+                                193
+                            ]
+                        },
+                        "init": [
+                            30,
+                            253,
+                            239
+                        ]
+                    },
+                    "pDuration": 0.25,
+                    "pScale": {
+                        "in": {
+                            "spline": "EASE_SOUND",
+                            "val": [
+                                0.8,
+                                0.8
+                            ]
+                        },
+                        "init": [
+                            0.5,
+                            0.5
+                        ]
+                    },
+                    "sheer": 1,
+                    "yShort": 4
+                },
+                {
+                    "type": "PTC_SINGLE",
+                    "alphaCut": 0.9,
+                    "anim": "ANI:shape.round#circle1",
+                    "cancelable": true,
+                    "followTarget": 1,
+                    "lighter": 1,
+                    "offset": [
+                        0,
+                        0,
+                        1.75
+                    ],
+                    "pAlpha": {
+                        "in": {
+                            "val": 0
+                        },
+                        "init": 0.55
+                    },
+                    "pColor": {
+                        "in": {
+                            "val": [
+                                0,
+                                66,
+                                193
+                            ]
+                        },
+                        "init": [
+                            30,
+                            253,
+                            239
+                        ]
+                    },
+                    "pDuration": 0.21666666666666667,
+                    "pScale": {
+                        "in": {
+                            "spline": "EASE_SOUND",
+                            "val": [
+                                0.7,
+                                0.7
+                            ]
+                        },
+                        "init": [
+                            0.5,
+                            0.5
+                        ]
+                    },
+                    "sheer": 1,
+                    "yShort": 4
+                },
+                {
+                    "type": "PTC_SINGLE",
+                    "alphaCut": 0.9,
+                    "anim": "ANI:shape.round#circle1",
+                    "cancelable": true,
+                    "followTarget": 1,
+                    "lighter": 1,
+                    "offset": [
+                        0,
+                        0,
+                        0.375
+                    ],
+                    "pAlpha": {
+                        "in": {
+                            "val": 0
+                        },
+                        "init": 0.55
+                    },
+                    "pColor": {
+                        "in": {
+                            "val": [
+                                0,
+                                66,
+                                193
+                            ]
+                        },
+                        "init": [
+                            30,
+                            253,
+                            239
+                        ]
+                    },
+                    "pDuration": 0.21666666666666667,
+                    "pScale": {
+                        "in": {
+                            "spline": "EASE_SOUND",
+                            "val": [
+                                0.7,
+                                0.7
+                            ]
+                        },
+                        "init": [
+                            0.5,
+                            0.5
+                        ]
+                    },
+                    "sheer": 1,
+                    "yShort": 4
+                },
+                {
+                    "type": "WAIT",
+                    "time": 0.05
+                },
+                {
+                    "type": "PTC_CIRCLE",
+                    "anim": "ANI:anim.shield#pShieldM",
+                    "cancelable": true,
+                    "followTarget": 1,
+                    "key": "shd",
+                    "lighter": 0.55,
+                    "endDist": 0.8,
+                    "moveDuration": 0.2,
+                    "moveRotate": -7,
+                    "rotWithTime": true,
+                    "startDist": 0.5,
+                    "offset": [
+                        0,
+                        0,
+                        0.9375
+                    ],
+                    "pDuration": -1,
+                    "pScale": {
+                        "in": {
+                            "time": 0.3,
+                            "val": [
+                                1,
+                                1
+                            ]
+                        },
+                        "init": [
+                            0,
+                            0
+                        ],
+                        "out": {
+                            "time": 0.2,
+                            "val": [
+                                0,
+                                0
+                            ]
+                        }
+                    },
+                    "numPtc": 8
+                },
+                {
+                    "type": "PTC_CIRCLE",
+                    "anim": "ANI:anim.shield#pShieldT",
+                    "cancelable": true,
+                    "followTarget": 1,
+                    "key": "shd",
+                    "lighter": 0.55,
+                    "endDist": 0.75,
+                    "moveDuration": 0.2,
+                    "moveRotate": -7,
+                    "rotWithTime": true,
+                    "startDist": 0.5,
+                    "offset": [
+                        0,
+                        0,
+                        1.875
+                    ],
+                    "pDuration": -1,
+                    "pScale": {
+                        "in": {
+                            "time": 0.3,
+                            "val": [
+                                1,
+                                1
+                            ]
+                        },
+                        "init": [
+                            0,
+                            0
+                        ],
+                        "out": {
+                            "time": 0.2,
+                            "val": [
+                                0,
+                                0
+                            ]
+                        }
+                    },
+                    "angleStart": 22,
+                    "numPtc": 8
+                },
+                {
+                    "type": "LOOP_START"
+                },
+                {
+                    "type": "WAIT",
+                    "time": 0.1
+                },
+                {
+                    "type": "LOOP_END"
+                },
+                {
+                    "type": "MOD_CIRCLE_PTC",
+                    "endDist": 0.6,
+                    "key": "shd",
+                    "moveDuration": 0.2
+                }
+            ],
+            "canHardStop": true
+        },
+        "shieldGuard": {
+            "steps": [
+                {
+                    "type": "PTC_CIRCLE_CURL",
+                    "alphaCut": 0.45,
+                    "anim": "ANI:small.dots#lineS2",
+                    "brightness": 0.6,
+                    "forces": {
+                        "attached": false,
+                        "drag": 5,
+                        "gravity": [
+                            0,
+                            0,
+                            0
+                        ],
+                        "initVelocity": [
+                            0,
+                            -12,
+                            0
+                        ],
+                        "rotVel": true,
+                        "vortexInForce": 0,
+                        "vortexPos": [
+                            0,
+                            0,
+                            0
+                        ],
+                        "vortexShape": "Z_SPHERE",
+                        "vortexSpinForce": 4
+                    },
+                    "normalize": false,
+                    "panning": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "rotToDir": "FAST",
+                    "rotateSpeed": 0,
+                    "scale": 12,
+                    "speed": 4,
+                    "spread": 1,
+                    "lighter": 1,
+                    "offset": [
+                        0,
+                        0,
+                        1
+                    ],
+                    "pAlpha": {
+                        "in": {
+                            "val": 0
+                        },
+                        "init": 1
+                    },
+                    "pColor": [
+                        69,
+                        255,
+                        255
+                    ],
+                    "pDuration": [
+                        0.4,
+                        0.6
+                    ],
+                    "pScale": {
+                        "in": {
+                            "val": [
+                                1,
+                                1
+                            ]
+                        },
+                        "init": [
+                            1,
+                            1
+                        ]
+                    },
+                    "numPtc": 5,
+                    "rotAxis": "SCREEN",
+                    "startDist": [
+                        0,
+                        1.55
+                    ],
+                    "zOrder": 128
+                },
+                {
+                    "type": "PTC_SPHERE",
+                    "alphaCut": 0.7,
+                    "anim": "ANI:shape.round#shine2",
+                    "brightness": 0.2,
+                    "followTarget": 1,
+                    "hueShift": 27,
+                    "lighter": 1,
+                    "addEndDist": true,
+                    "endDist": 0.75,
+                    "moveRotate": -4,
+                    "rotFlip": true,
+                    "startDist": 0.46,
+                    "offset": [
+                        0,
+                        0,
+                        1.375
+                    ],
+                    "pAlpha": {
+                        "in": {
+                            "val": 0
+                        },
+                        "init": 1
+                    },
+                    "pColor": [
+                        109,
+                        228,
+                        235
+                    ],
+                    "pDuration": [
+                        0.1,
+                        0.3
+                    ],
+                    "pScale": [
+                        0.8,
+                        0.8
+                    ],
+                    "scaleVary": [
+                        -0.6,
+                        -0.6
+                    ],
+                    "angleRange": 0,
+                    "circles": 12,
+                    "numPtc": 12,
+                    "uniRand": 1,
+                    "zRange": [
+                        -1,
+                        1
+                    ],
+                    "zScale": 1.55,
+                    "zOrder": 24
+                },
+                {
+                    "type": "PTC_SPHERE",
+                    "alphaCut": 0.85,
+                    "anim": "ANI:shape.round#dot",
+                    "followTarget": 1,
+                    "hueShift": 27,
+                    "lighter": 1,
+                    "addEndDist": true,
+                    "endDist": 0.4,
+                    "moveRotate": -4,
+                    "rotFlip": true,
+                    "startDist": 0.46,
+                    "offset": [
+                        0,
+                        0,
+                        1.375
+                    ],
+                    "pAlpha": 0.8,
+                    "pColor": {
+                        "in": {
+                            "val": [
+                                0,
+                                0,
+                                0
+                            ]
+                        },
+                        "init": [
+                            109,
+                            228,
+                            235
+                        ]
+                    },
+                    "pDuration": 0.2,
+                    "angleRange": 0,
+                    "circles": 12,
+                    "numPtc": 40,
+                    "uniRand": 1,
+                    "zRange": [
+                        -0.7,
+                        0.7
+                    ],
+                    "zScale": 1.55,
+                    "zOrder": 24
+                },
+                {
+                    "type": "PTC_CIRCLE",
+                    "anim": "ANI:anim.shield#pShieldM",
+                    "cancelable": true,
+                    "followTarget": 1,
+                    "key": "shd",
+                    "lighter": 0.55,
+                    "endDist": 0.8,
+                    "moveDuration": 0.2,
+                    "moveRotate": -7,
+                    "rotWithTime": true,
+                    "startDist": 0.9,
+                    "offset": [
+                        0,
+                        0,
+                        0.9375
+                    ],
+                    "pDuration": -1,
+                    "pScale": {
+                        "in": {
+                            "spline": "EASE_OUT",
+                            "time": 0.2,
+                            "val": [
+                                1,
+                                1
+                            ]
+                        },
+                        "init": [
+                            1.5,
+                            1.5
+                        ],
+                        "out": {
+                            "time": 0.2,
+                            "val": [
+                                0,
+                                0
+                            ]
+                        }
+                    },
+                    "numPtc": 8
+                },
+                {
+                    "type": "PTC_CIRCLE",
+                    "anim": "ANI:anim.shield#pShieldT",
+                    "cancelable": true,
+                    "followTarget": 1,
+                    "key": "shd",
+                    "lighter": 0.55,
+                    "endDist": 0.75,
+                    "moveDuration": 0.2,
+                    "moveRotate": -7,
+                    "rotWithTime": true,
+                    "startDist": 0.9,
+                    "offset": [
+                        0,
+                        0,
+                        1.875
+                    ],
+                    "pDuration": -1,
+                    "pScale": {
+                        "in": {
+                            "spline": "EASE_OUT",
+                            "time": 0.2,
+                            "val": [
+                                1,
+                                1
+                            ]
+                        },
+                        "init": [
+                            1.5,
+                            1.5
+                        ],
+                        "out": {
+                            "time": 0.2,
+                            "val": [
+                                0,
+                                0
+                            ]
+                        }
+                    },
+                    "angleStart": 22,
+                    "numPtc": 8
+                },
+                {
+                    "type": "LOOP_START"
+                },
+                {
+                    "type": "WAIT",
+                    "time": 0.1
+                },
+                {
+                    "type": "LOOP_END"
+                },
+                {
+                    "type": "MOD_CIRCLE_PTC",
+                    "endDist": 0.6,
+                    "key": "shd",
+                    "moveDuration": 0.2
+                }
+            ],
+            "canHardStop": true
+        },
+        "shieldPostPerfect": {
+            "steps": [
+                {
+                    "type": "WAIT",
+                    "time": 0.05
+                },
+                {
+                    "type": "PTC_CIRCLE",
+                    "anim": "ANI:anim.shield#pShieldM",
+                    "cancelable": true,
+                    "followTarget": 1,
+                    "key": "shd",
+                    "lighter": 0.55,
+                    "endDist": 0.8,
+                    "moveDuration": 0.2,
+                    "moveRotate": -7,
+                    "rotWithTime": true,
+                    "startDist": 0.5,
+                    "offset": [
+                        0,
+                        0,
+                        0.9375
+                    ],
+                    "pDuration": -1,
+                    "pScale": {
+                        "in": {
+                            "time": 0.3,
+                            "val": [
+                                1,
+                                1
+                            ]
+                        },
+                        "init": [
+                            0,
+                            0
+                        ],
+                        "out": {
+                            "time": 0.2,
+                            "val": [
+                                0,
+                                0
+                            ]
+                        }
+                    },
+                    "numPtc": 8
+                },
+                {
+                    "type": "PTC_CIRCLE",
+                    "anim": "ANI:anim.shield#pShieldT",
+                    "cancelable": true,
+                    "followTarget": 1,
+                    "key": "shd",
+                    "lighter": 0.55,
+                    "endDist": 0.75,
+                    "moveDuration": 0.2,
+                    "moveRotate": -7,
+                    "rotWithTime": true,
+                    "startDist": 0.5,
+                    "offset": [
+                        0,
+                        0,
+                        1.875
+                    ],
+                    "pDuration": -1,
+                    "pScale": {
+                        "in": {
+                            "time": 0.3,
+                            "val": [
+                                1,
+                                1
+                            ]
+                        },
+                        "init": [
+                            0,
+                            0
+                        ],
+                        "out": {
+                            "time": 0.2,
+                            "val": [
+                                0,
+                                0
+                            ]
+                        }
+                    },
+                    "angleStart": 22,
+                    "numPtc": 8
+                },
+                {
+                    "type": "LOOP_START"
+                },
+                {
+                    "type": "WAIT",
+                    "time": 0.1
+                },
+                {
+                    "type": "LOOP_END"
+                },
+                {
+                    "type": "MOD_CIRCLE_PTC",
+                    "endDist": 0.6,
+                    "key": "shd",
+                    "moveDuration": 0.2
+                }
+            ],
+            "canHardStop": true
+        },
+        "shieldBurst": {
+            "steps": [
+                {
+                    "type": "PTC_CIRCLE_CURL",
+                    "alphaCut": 0.45,
+                    "anim": "ANI:small.dots#lineS2",
+                    "brightness": 0.6,
+                    "forces": {
+                        "attached": false,
+                        "drag": 5,
+                        "gravity": [
+                            0,
+                            0,
+                            0
+                        ],
+                        "initVelocity": [
+                            0,
+                            -12,
+                            0
+                        ],
+                        "rotVel": true,
+                        "vortexInForce": 0,
+                        "vortexPos": [
+                            0,
+                            0,
+                            0
+                        ],
+                        "vortexShape": "Z_SPHERE",
+                        "vortexSpinForce": 4
+                    },
+                    "normalize": false,
+                    "panning": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "rotToDir": "FAST",
+                    "rotateSpeed": 0,
+                    "scale": 12,
+                    "speed": 4,
+                    "spread": 1,
+                    "lighter": 1,
+                    "offset": [
+                        0,
+                        0,
+                        1
+                    ],
+                    "pAlpha": {
+                        "in": {
+                            "val": 0
+                        },
+                        "init": 1
+                    },
+                    "pColor": [
+                        69,
+                        255,
+                        255
+                    ],
+                    "pDuration": [
+                        0.4,
+                        0.6
+                    ],
+                    "pScale": {
+                        "in": {
+                            "val": [
+                                1,
+                                1
+                            ]
+                        },
+                        "init": [
+                            1,
+                            1
+                        ]
+                    },
+                    "numPtc": 40,
+                    "rotAxis": "SCREEN",
+                    "startDist": [
+                        0,
+                        1.55
+                    ],
+                    "zOrder": 128
+                },
+                {
+                    "type": "PTC_SPHERE",
+                    "alphaCut": 0.35,
+                    "anim": "ANI:small.dots#star1",
+                    "brightness": 0.55,
+                    "cancelable": true,
+                    "followTarget": 1,
+                    "lighter": 1,
+                    "addEndDist": true,
+                    "endDist": 0.1,
+                    "moveRotate": [
+                        -25,
+                        -10
+                    ],
+                    "startDist": 0.85,
+                    "offset": [
+                        0,
+                        0,
+                        1.25
+                    ],
+                    "pAlpha": {
+                        "in": {
+                            "val": 0
+                        },
+                        "init": 1
+                    },
+                    "pColor": [
+                        0,
+                        163,
+                        255
+                    ],
+                    "pDuration": 0.31666666666666665,
+                    "angleRange": 0,
+                    "circles": 3,
+                    "numPtc": 32,
+                    "uniRand": 0.5,
+                    "zRange": [
+                        -0.8,
+                        0.7
+                    ],
+                    "zScale": 1.6
+                },
+                {
+                    "type": "PTC_SINGLE",
+                    "_skip": true,
+                    "alphaCut": 0.9,
+                    "anim": "ANI:shape.round#circle1",
+                    "brightness": 0.1,
+                    "cancelable": true,
+                    "followTarget": 1,
+                    "lighter": 1,
+                    "offset": [
+                        0,
+                        0,
+                        0.875
+                    ],
+                    "pAlpha": {
+                        "in": {
+                            "val": 0
+                        },
+                        "init": 0.55
+                    },
+                    "pColor": {
+                        "in": {
+                            "val": [
+                                0,
+                                66,
+                                193
+                            ]
+                        },
+                        "init": [
+                            30,
+                            253,
+                            239
+                        ]
+                    },
+                    "pDuration": 0.25,
+                    "pScale": {
+                        "in": {
+                            "spline": "EASE_SOUND",
+                            "val": [
+                                0.8,
+                                0.8
+                            ]
+                        },
+                        "init": [
+                            0.5,
+                            0.5
+                        ]
+                    },
+                    "sheer": 1,
+                    "yShort": 4
+                },
+                {
+                    "type": "PTC_SINGLE",
+                    "alphaCut": 0.9,
+                    "anim": "ANI:shape.round#circle2",
+                    "brightness": 0.1,
+                    "followTarget": 1,
+                    "lighter": 1,
+                    "offset": [
+                        0,
+                        0,
+                        1.75
+                    ],
+                    "pAlpha": {
+                        "in": {
+                            "val": 0
+                        },
+                        "init": 0.9
+                    },
+                    "pColor": {
+                        "in": {
+                            "val": [
+                                0,
+                                66,
+                                193
+                            ]
+                        },
+                        "init": [
+                            30,
+                            253,
+                            239
+                        ]
+                    },
+                    "pDuration": 0.21666666666666667,
+                    "pRotate": {
+                        "in": {
+                            "spline": "EASE_OUT",
+                            "val": -64
+                        },
+                        "init": 0
+                    },
+                    "pScale": {
+                        "in": {
+                            "spline": "EASE_OUT_STRONG",
+                            "val": [
+                                1.5,
+                                1.5
+                            ]
+                        },
+                        "init": [
+                            0.5,
+                            0.5
+                        ]
+                    },
+                    "postRot": 10,
+                    "sheer": 1,
+                    "yShort": 4
+                },
+                {
+                    "type": "PTC_SINGLE",
+                    "_skip": true,
+                    "alphaCut": 0.9,
+                    "anim": "ANI:shape.round#circle2",
+                    "cancelable": true,
+                    "followTarget": 1,
+                    "lighter": 1,
+                    "offset": [
+                        0,
+                        0,
+                        1.75
+                    ],
+                    "pAlpha": {
+                        "in": {
+                            "val": 0
+                        },
+                        "init": 0.55
+                    },
+                    "pColor": {
+                        "in": {
+                            "val": [
+                                0,
+                                66,
+                                193
+                            ]
+                        },
+                        "init": [
+                            30,
+                            253,
+                            239
+                        ]
+                    },
+                    "pDuration": 0.3,
+                    "pScale": {
+                        "in": {
+                            "spline": "EASE_SOUND",
+                            "val": [
+                                1.8,
+                                1.8
+                            ]
+                        },
+                        "init": [
+                            0.5,
+                            0.5
+                        ]
+                    },
+                    "postRot": 9,
+                    "sheer": 1,
+                    "yShort": 4
+                },
+                {
+                    "type": "PTC_SINGLE",
+                    "alphaCut": 0.9,
+                    "anim": "ANI:shape.round#circle2",
+                    "brightness": 0.15,
+                    "followTarget": 1,
+                    "lighter": 1,
+                    "offset": [
+                        0,
+                        0,
+                        1.75
+                    ],
+                    "pAlpha": {
+                        "in": {
+                            "val": 0
+                        },
+                        "init": 0.55
+                    },
+                    "pColor": {
+                        "in": {
+                            "val": [
+                                0,
+                                66,
+                                193
+                            ]
+                        },
+                        "init": [
+                            30,
+                            253,
+                            239
+                        ]
+                    },
+                    "pDuration": 0.23333333333333334,
+                    "pRotate": {
+                        "in": {
+                            "spline": "EASE_OUT",
+                            "val": 64
+                        },
+                        "init": 0
+                    },
+                    "pScale": {
+                        "in": {
+                            "spline": "EASE_OUT_STRONG",
+                            "val": [
+                                1.5,
+                                1.5
+                            ]
+                        },
+                        "init": [
+                            0.5,
+                            0.5
+                        ]
+                    },
+                    "postRot": -11,
+                    "scaleVary": [
+                        0.2,
+                        0.2
+                    ],
+                    "sheer": 1,
+                    "yShort": 4
+                },
+                {
+                    "type": "PTC_SINGLE",
+                    "_skip": true,
+                    "alphaCut": 0.9,
+                    "anim": "ANI:shape.round#circle1",
+                    "cancelable": true,
+                    "followTarget": 1,
+                    "lighter": 1,
+                    "offset": [
+                        0,
+                        0,
+                        0.375
+                    ],
+                    "pAlpha": {
+                        "in": {
+                            "val": 0
+                        },
+                        "init": 0.55
+                    },
+                    "pColor": {
+                        "in": {
+                            "val": [
+                                0,
+                                66,
+                                193
+                            ]
+                        },
+                        "init": [
+                            30,
+                            253,
+                            239
+                        ]
+                    },
+                    "pDuration": 0.21666666666666667,
+                    "pScale": {
+                        "in": {
+                            "spline": "EASE_SOUND",
+                            "val": [
+                                0.7,
+                                0.7
+                            ]
+                        },
+                        "init": [
+                            0.5,
+                            0.5
+                        ]
+                    },
+                    "sheer": 1,
+                    "yShort": 4
+                },
+                {
+                    "type": "WAIT",
+                    "time": 0.25
+                },
+                {
+                    "type": "PTC_CIRCLE",
+                    "anim": "ANI:anim.shield#pShieldM",
+                    "cancelable": true,
+                    "followTarget": 1,
+                    "key": "shd",
+                    "lighter": 0.55,
+                    "endDist": 0.8,
+                    "moveDuration": 0.2,
+                    "moveRotate": -7,
+                    "rotWithTime": true,
+                    "startDist": 0.5,
+                    "offset": [
+                        0,
+                        0,
+                        0.9375
+                    ],
+                    "pDuration": -1,
+                    "pScale": {
+                        "in": {
+                            "time": 0.3,
+                            "val": [
+                                1,
+                                1
+                            ]
+                        },
+                        "init": [
+                            0,
+                            0
+                        ],
+                        "out": {
+                            "time": 0.2,
+                            "val": [
+                                0,
+                                0
+                            ]
+                        }
+                    },
+                    "numPtc": 8
+                },
+                {
+                    "type": "PTC_CIRCLE",
+                    "anim": "ANI:anim.shield#pShieldT",
+                    "cancelable": true,
+                    "followTarget": 1,
+                    "key": "shd",
+                    "lighter": 0.55,
+                    "endDist": 0.75,
+                    "moveDuration": 0.2,
+                    "moveRotate": -7,
+                    "rotWithTime": true,
+                    "startDist": 0.5,
+                    "offset": [
+                        0,
+                        0,
+                        1.875
+                    ],
+                    "pDuration": -1,
+                    "pScale": {
+                        "in": {
+                            "time": 0.3,
+                            "val": [
+                                1,
+                                1
+                            ]
+                        },
+                        "init": [
+                            0,
+                            0
+                        ],
+                        "out": {
+                            "time": 0.2,
+                            "val": [
+                                0,
+                                0
+                            ]
+                        }
+                    },
+                    "angleStart": 22,
+                    "numPtc": 8
+                },
+                {
+                    "type": "LOOP_START"
+                },
+                {
+                    "type": "WAIT",
+                    "time": 0.1
+                },
+                {
+                    "type": "LOOP_END"
+                },
+                {
+                    "type": "MOD_CIRCLE_PTC",
+                    "endDist": 0.6,
+                    "key": "shd",
+                    "moveDuration": 0.2
+                }
+            ],
+            "canHardStop": true
+        },
+        "shieldBig": {
+            "steps": [
+                {
+                    "type": "PTC_SPHERE",
+                    "alphaCut": 0.35,
+                    "anim": "ANI:small.dots#star1",
+                    "brightness": 0.55,
+                    "cancelable": true,
+                    "followTarget": 1,
+                    "lighter": 1,
+                    "addEndDist": true,
+                    "endDist": 0.1,
+                    "moveRotate": [
+                        -25,
+                        -10
+                    ],
+                    "startDist": 0.85,
+                    "offset": [
+                        0,
+                        0,
+                        1.25
+                    ],
+                    "pAlpha": {
+                        "in": {
+                            "val": 0
+                        },
+                        "init": 1
+                    },
+                    "pColor": [
+                        0,
+                        163,
+                        255
+                    ],
+                    "pDuration": 0.31666666666666665,
+                    "angleRange": 0,
+                    "circles": 3,
+                    "numPtc": 32,
+                    "uniRand": 0.5,
+                    "zRange": [
+                        -0.8,
+                        0.7
+                    ],
+                    "zScale": 1.6
+                },
+                {
+                    "type": "PTC_SINGLE",
+                    "alphaCut": 0.9,
+                    "anim": "ANI:shape.round#circle1",
+                    "brightness": 0.1,
+                    "cancelable": true,
+                    "followTarget": 1,
+                    "lighter": 1,
+                    "offset": [
+                        0,
+                        0,
+                        0.875
+                    ],
+                    "pAlpha": {
+                        "in": {
+                            "val": 0
+                        },
+                        "init": 0.55
+                    },
+                    "pColor": {
+                        "in": {
+                            "val": [
+                                0,
+                                66,
+                                193
+                            ]
+                        },
+                        "init": [
+                            30,
+                            253,
+                            239
+                        ]
+                    },
+                    "pDuration": 0.25,
+                    "pScale": {
+                        "in": {
+                            "spline": "EASE_SOUND",
+                            "val": [
+                                0.8,
+                                0.8
+                            ]
+                        },
+                        "init": [
+                            0.5,
+                            0.5
+                        ]
+                    },
+                    "sheer": 1,
+                    "yShort": 4
+                },
+                {
+                    "type": "PTC_SINGLE",
+                    "alphaCut": 0.9,
+                    "anim": "ANI:shape.round#circle1",
+                    "cancelable": true,
+                    "followTarget": 1,
+                    "lighter": 1,
+                    "offset": [
+                        0,
+                        0,
+                        1.75
+                    ],
+                    "pAlpha": {
+                        "in": {
+                            "val": 0
+                        },
+                        "init": 0.55
+                    },
+                    "pColor": {
+                        "in": {
+                            "val": [
+                                0,
+                                66,
+                                193
+                            ]
+                        },
+                        "init": [
+                            30,
+                            253,
+                            239
+                        ]
+                    },
+                    "pDuration": 0.21666666666666667,
+                    "pScale": {
+                        "in": {
+                            "spline": "EASE_SOUND",
+                            "val": [
+                                0.7,
+                                0.7
+                            ]
+                        },
+                        "init": [
+                            0.5,
+                            0.5
+                        ]
+                    },
+                    "sheer": 1,
+                    "yShort": 4
+                },
+                {
+                    "type": "PTC_SINGLE",
+                    "alphaCut": 0.9,
+                    "anim": "ANI:shape.round#circle1",
+                    "cancelable": true,
+                    "followTarget": 1,
+                    "lighter": 1,
+                    "offset": [
+                        0,
+                        0,
+                        0.375
+                    ],
+                    "pAlpha": {
+                        "in": {
+                            "val": 0
+                        },
+                        "init": 0.55
+                    },
+                    "pColor": {
+                        "in": {
+                            "val": [
+                                0,
+                                66,
+                                193
+                            ]
+                        },
+                        "init": [
+                            30,
+                            253,
+                            239
+                        ]
+                    },
+                    "pDuration": 0.21666666666666667,
+                    "pScale": {
+                        "in": {
+                            "spline": "EASE_SOUND",
+                            "val": [
+                                0.7,
+                                0.7
+                            ]
+                        },
+                        "init": [
+                            0.5,
+                            0.5
+                        ]
+                    },
+                    "sheer": 1,
+                    "yShort": 4
+                },
+                {
+                    "type": "WAIT",
+                    "time": 0.05
+                },
+                {
+                    "type": "PTC_CIRCLE",
+                    "anim": "ANI:anim.shield#pShieldM",
+                    "cancelable": true,
+                    "followTarget": 1,
+                    "key": "shd",
+                    "lighter": 0.55,
+                    "endDist": 1,
+                    "moveDuration": 0.2,
+                    "moveRotate": -7,
+                    "rotWithTime": true,
+                    "startDist": 0.5,
+                    "offset": [
+                        0,
+                        0,
+                        0.9375
+                    ],
+                    "pDuration": -1,
+                    "pScale": {
+                        "in": {
+                            "time": 0.3,
+                            "val": [
+                                1,
+                                1
+                            ]
+                        },
+                        "init": [
+                            0,
+                            0
+                        ],
+                        "out": {
+                            "time": 0.2,
+                            "val": [
+                                0,
+                                0
+                            ]
+                        }
+                    },
+                    "numPtc": 8,
+                    "zOrder": 3
+                },
+                {
+                    "type": "PTC_CIRCLE",
+                    "anim": "ANI:anim.shield#pShieldT",
+                    "cancelable": true,
+                    "followTarget": 1,
+                    "key": "shd",
+                    "lighter": 0.55,
+                    "endDist": 0.95,
+                    "moveDuration": 0.2,
+                    "moveRotate": -7,
+                    "rotWithTime": true,
+                    "startDist": 0.5,
+                    "offset": [
+                        0,
+                        0,
+                        1.875
+                    ],
+                    "pDuration": -1,
+                    "pScale": {
+                        "in": {
+                            "time": 0.3,
+                            "val": [
+                                1,
+                                1
+                            ]
+                        },
+                        "init": [
+                            0,
+                            0
+                        ],
+                        "out": {
+                            "time": 0.2,
+                            "val": [
+                                0,
+                                0
+                            ]
+                        }
+                    },
+                    "angleStart": 22,
+                    "numPtc": 8,
+                    "zOrder": 3
+                },
+                {
+                    "type": "LOOP_START"
+                },
+                {
+                    "type": "WAIT",
+                    "time": 0.1
+                },
+                {
+                    "type": "LOOP_END"
+                },
+                {
+                    "type": "MOD_CIRCLE_PTC",
+                    "endDist": 0.6,
+                    "key": "shd",
+                    "moveDuration": 0.2
+                }
+            ],
+            "canHardStop": true
+        },
+        "shieldBigGuard": {
+            "steps": [
+                {
+                    "type": "PTC_CIRCLE_CURL",
+                    "alphaCut": 0.45,
+                    "anim": "ANI:small.dots#lineS2",
+                    "brightness": 0.6,
+                    "forces": {
+                        "attached": false,
+                        "drag": 5,
+                        "gravity": [
+                            0,
+                            0,
+                            0
+                        ],
+                        "initVelocity": [
+                            0,
+                            -12,
+                            0
+                        ],
+                        "rotVel": true,
+                        "vortexInForce": 0,
+                        "vortexPos": [
+                            0,
+                            0,
+                            0
+                        ],
+                        "vortexShape": "Z_SPHERE",
+                        "vortexSpinForce": 4
+                    },
+                    "normalize": false,
+                    "panning": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "rotToDir": "FAST",
+                    "rotateSpeed": 0,
+                    "scale": 12,
+                    "speed": 4,
+                    "spread": 1,
+                    "lighter": 1,
+                    "offset": [
+                        0,
+                        0,
+                        1
+                    ],
+                    "pAlpha": {
+                        "in": {
+                            "val": 0
+                        },
+                        "init": 1
+                    },
+                    "pColor": [
+                        69,
+                        255,
+                        255
+                    ],
+                    "pDuration": [
+                        0.4,
+                        0.6
+                    ],
+                    "pScale": {
+                        "in": {
+                            "val": [
+                                1,
+                                1
+                            ]
+                        },
+                        "init": [
+                            1,
+                            1
+                        ]
+                    },
+                    "numPtc": 5,
+                    "rotAxis": "SCREEN",
+                    "startDist": [
+                        0,
+                        1.55
+                    ],
+                    "zOrder": 128
+                },
+                {
+                    "type": "PTC_SPHERE",
+                    "alphaCut": 0.7,
+                    "anim": "ANI:shape.round#shine2",
+                    "brightness": 0.2,
+                    "followTarget": 1,
+                    "hueShift": 27,
+                    "lighter": 1,
+                    "addEndDist": true,
+                    "endDist": 0.75,
+                    "moveRotate": -4,
+                    "rotFlip": true,
+                    "startDist": 0.46,
+                    "offset": [
+                        0,
+                        0,
+                        1.375
+                    ],
+                    "pAlpha": {
+                        "in": {
+                            "val": 0
+                        },
+                        "init": 1
+                    },
+                    "pColor": [
+                        109,
+                        228,
+                        235
+                    ],
+                    "pDuration": [
+                        0.1,
+                        0.3
+                    ],
+                    "pScale": [
+                        0.8,
+                        0.8
+                    ],
+                    "scaleVary": [
+                        -0.6,
+                        -0.6
+                    ],
+                    "angleRange": 0,
+                    "circles": 12,
+                    "numPtc": 12,
+                    "uniRand": 1,
+                    "zRange": [
+                        -1,
+                        1
+                    ],
+                    "zScale": 1.55,
+                    "zOrder": 24
+                },
+                {
+                    "type": "PTC_SPHERE",
+                    "alphaCut": 0.85,
+                    "anim": "ANI:shape.round#dot",
+                    "followTarget": 1,
+                    "hueShift": 27,
+                    "lighter": 1,
+                    "addEndDist": true,
+                    "endDist": 0.4,
+                    "moveRotate": -4,
+                    "rotFlip": true,
+                    "startDist": 0.66,
+                    "offset": [
+                        0,
+                        0,
+                        1.375
+                    ],
+                    "pAlpha": 0.8,
+                    "pColor": {
+                        "in": {
+                            "val": [
+                                0,
+                                0,
+                                0
+                            ]
+                        },
+                        "init": [
+                            109,
+                            228,
+                            235
+                        ]
+                    },
+                    "pDuration": 0.2,
+                    "angleRange": 0,
+                    "circles": 12,
+                    "numPtc": 40,
+                    "uniRand": 1,
+                    "zRange": [
+                        -0.7,
+                        0.7
+                    ],
+                    "zScale": 1.55,
+                    "zOrder": 24
+                },
+                {
+                    "type": "PTC_CIRCLE",
+                    "anim": "ANI:anim.shield#pShieldM",
+                    "cancelable": true,
+                    "followTarget": 1,
+                    "key": "shd",
+                    "lighter": 0.55,
+                    "endDist": 1,
+                    "moveDuration": 0.2,
+                    "moveRotate": -7,
+                    "rotWithTime": true,
+                    "startDist": 0.5,
+                    "offset": [
+                        0,
+                        0,
+                        0.9375
+                    ],
+                    "pDuration": -1,
+                    "pScale": {
+                        "in": {
+                            "time": 0.3,
+                            "val": [
+                                1,
+                                1
+                            ]
+                        },
+                        "init": [
+                            0,
+                            0
+                        ],
+                        "out": {
+                            "time": 0.2,
+                            "val": [
+                                0,
+                                0
+                            ]
+                        }
+                    },
+                    "numPtc": 8,
+                    "zOrder": 3
+                },
+                {
+                    "type": "PTC_CIRCLE",
+                    "anim": "ANI:anim.shield#pShieldT",
+                    "cancelable": true,
+                    "followTarget": 1,
+                    "key": "shd",
+                    "lighter": 0.55,
+                    "endDist": 0.95,
+                    "moveDuration": 0.2,
+                    "moveRotate": -7,
+                    "rotWithTime": true,
+                    "startDist": 0.5,
+                    "offset": [
+                        0,
+                        0,
+                        1.875
+                    ],
+                    "pDuration": -1,
+                    "pScale": {
+                        "in": {
+                            "time": 0.3,
+                            "val": [
+                                1,
+                                1
+                            ]
+                        },
+                        "init": [
+                            0,
+                            0
+                        ],
+                        "out": {
+                            "time": 0.2,
+                            "val": [
+                                0,
+                                0
+                            ]
+                        }
+                    },
+                    "angleStart": 22,
+                    "numPtc": 8,
+                    "zOrder": 3
+                },
+                {
+                    "type": "LOOP_START"
+                },
+                {
+                    "type": "WAIT",
+                    "time": 0.1
+                },
+                {
+                    "type": "LOOP_END"
+                },
+                {
+                    "type": "MOD_CIRCLE_PTC",
+                    "endDist": 0.6,
+                    "key": "shd",
+                    "moveDuration": 0.2
+                }
+            ],
+            "canHardStop": true
+        },
+        "shieldBigPostPerfect": {
+            "steps": [
+                {
+                    "type": "WAIT",
+                    "time": 0.05
+                },
+                {
+                    "type": "PTC_CIRCLE",
+                    "anim": "ANI:anim.shield#pShieldM",
+                    "cancelable": true,
+                    "followTarget": 1,
+                    "key": "shd",
+                    "lighter": 0.55,
+                    "endDist": 1,
+                    "moveDuration": 0.2,
+                    "moveRotate": -7,
+                    "rotWithTime": true,
+                    "startDist": 0.5,
+                    "offset": [
+                        0,
+                        0,
+                        0.9375
+                    ],
+                    "pDuration": -1,
+                    "pScale": {
+                        "in": {
+                            "time": 0.3,
+                            "val": [
+                                1,
+                                1
+                            ]
+                        },
+                        "init": [
+                            0,
+                            0
+                        ],
+                        "out": {
+                            "time": 0.2,
+                            "val": [
+                                0,
+                                0
+                            ]
+                        }
+                    },
+                    "numPtc": 8,
+                    "zOrder": 3
+                },
+                {
+                    "type": "PTC_CIRCLE",
+                    "anim": "ANI:anim.shield#pShieldT",
+                    "cancelable": true,
+                    "followTarget": 1,
+                    "key": "shd",
+                    "lighter": 0.55,
+                    "endDist": 0.95,
+                    "moveDuration": 0.2,
+                    "moveRotate": -7,
+                    "rotWithTime": true,
+                    "startDist": 0.5,
+                    "offset": [
+                        0,
+                        0,
+                        1.875
+                    ],
+                    "pDuration": -1,
+                    "pScale": {
+                        "in": {
+                            "time": 0.3,
+                            "val": [
+                                1,
+                                1
+                            ]
+                        },
+                        "init": [
+                            0,
+                            0
+                        ],
+                        "out": {
+                            "time": 0.2,
+                            "val": [
+                                0,
+                                0
+                            ]
+                        }
+                    },
+                    "angleStart": 22,
+                    "numPtc": 8,
+                    "zOrder": 3
+                },
+                {
+                    "type": "LOOP_START"
+                },
+                {
+                    "type": "WAIT",
+                    "time": 0.1
+                },
+                {
+                    "type": "LOOP_END"
+                },
+                {
+                    "type": "MOD_CIRCLE_PTC",
+                    "endDist": 0.6,
+                    "key": "shd",
+                    "moveDuration": 0.2
+                }
+            ],
+            "canHardStop": true
+        },
+        "shieldBigBurst": {
+            "steps": [
+                {
+                    "type": "PTC_CIRCLE_CURL",
+                    "alphaCut": 0.45,
+                    "anim": "ANI:small.dots#lineS2",
+                    "brightness": 0.6,
+                    "forces": {
+                        "attached": false,
+                        "drag": 5,
+                        "gravity": [
+                            0,
+                            0,
+                            0
+                        ],
+                        "initVelocity": [
+                            0,
+                            -12,
+                            0
+                        ],
+                        "rotVel": true,
+                        "vortexInForce": 0,
+                        "vortexPos": [
+                            0,
+                            0,
+                            0
+                        ],
+                        "vortexShape": "Z_SPHERE",
+                        "vortexSpinForce": 4
+                    },
+                    "normalize": false,
+                    "panning": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "rotToDir": "FAST",
+                    "rotateSpeed": 0,
+                    "scale": 12,
+                    "speed": 4,
+                    "spread": 1,
+                    "lighter": 1,
+                    "offset": [
+                        0,
+                        0,
+                        1
+                    ],
+                    "pAlpha": {
+                        "in": {
+                            "val": 0
+                        },
+                        "init": 1
+                    },
+                    "pColor": [
+                        69,
+                        255,
+                        255
+                    ],
+                    "pDuration": [
+                        0.4,
+                        0.6
+                    ],
+                    "pScale": {
+                        "in": {
+                            "val": [
+                                1,
+                                1
+                            ]
+                        },
+                        "init": [
+                            1,
+                            1
+                        ]
+                    },
+                    "numPtc": 40,
+                    "rotAxis": "SCREEN",
+                    "startDist": [
+                        0,
+                        1.55
+                    ],
+                    "zOrder": 128
+                },
+                {
+                    "type": "PTC_SPHERE",
+                    "alphaCut": 0.35,
+                    "anim": "ANI:small.dots#star1",
+                    "brightness": 0.55,
+                    "cancelable": true,
+                    "followTarget": 1,
+                    "lighter": 1,
+                    "addEndDist": true,
+                    "endDist": 0.1,
+                    "moveRotate": [
+                        -25,
+                        -10
+                    ],
+                    "startDist": 1,
+                    "offset": [
+                        0,
+                        0,
+                        1.25
+                    ],
+                    "pAlpha": {
+                        "in": {
+                            "val": 0
+                        },
+                        "init": 1
+                    },
+                    "pColor": [
+                        0,
+                        163,
+                        255
+                    ],
+                    "pDuration": 0.31666666666666665,
+                    "angleRange": 0,
+                    "circles": 3,
+                    "numPtc": 32,
+                    "uniRand": 0.5,
+                    "zRange": [
+                        -0.8,
+                        0.7
+                    ],
+                    "zScale": 1.6
+                },
+                {
+                    "type": "PTC_SINGLE",
+                    "_skip": true,
+                    "alphaCut": 0.9,
+                    "anim": "ANI:shape.round#circle1",
+                    "brightness": 0.1,
+                    "cancelable": true,
+                    "followTarget": 1,
+                    "lighter": 1,
+                    "offset": [
+                        0,
+                        0,
+                        0.875
+                    ],
+                    "pAlpha": {
+                        "in": {
+                            "val": 0
+                        },
+                        "init": 0.55
+                    },
+                    "pColor": {
+                        "in": {
+                            "val": [
+                                0,
+                                66,
+                                193
+                            ]
+                        },
+                        "init": [
+                            30,
+                            253,
+                            239
+                        ]
+                    },
+                    "pDuration": 0.25,
+                    "pScale": {
+                        "in": {
+                            "spline": "EASE_SOUND",
+                            "val": [
+                                0.8,
+                                0.8
+                            ]
+                        },
+                        "init": [
+                            0.5,
+                            0.5
+                        ]
+                    },
+                    "sheer": 1,
+                    "yShort": 4
+                },
+                {
+                    "type": "PTC_SINGLE",
+                    "alphaCut": 0.9,
+                    "anim": "ANI:shape.round#circle2",
+                    "brightness": 0.1,
+                    "followTarget": 1,
+                    "lighter": 1,
+                    "offset": [
+                        0,
+                        0,
+                        1.75
+                    ],
+                    "pAlpha": {
+                        "in": {
+                            "val": 0
+                        },
+                        "init": 0.9
+                    },
+                    "pColor": {
+                        "in": {
+                            "val": [
+                                0,
+                                66,
+                                193
+                            ]
+                        },
+                        "init": [
+                            30,
+                            253,
+                            239
+                        ]
+                    },
+                    "pDuration": 0.21666666666666667,
+                    "pRotate": {
+                        "in": {
+                            "spline": "EASE_OUT",
+                            "val": -64
+                        },
+                        "init": 0
+                    },
+                    "pScale": {
+                        "in": {
+                            "spline": "EASE_OUT_STRONG",
+                            "val": [
+                                1.5,
+                                1.5
+                            ]
+                        },
+                        "init": [
+                            0.5,
+                            0.5
+                        ]
+                    },
+                    "postRot": 10,
+                    "sheer": 1,
+                    "yShort": 4
+                },
+                {
+                    "type": "PTC_SINGLE",
+                    "_skip": true,
+                    "alphaCut": 0.9,
+                    "anim": "ANI:shape.round#circle2",
+                    "cancelable": true,
+                    "followTarget": 1,
+                    "lighter": 1,
+                    "offset": [
+                        0,
+                        0,
+                        1.75
+                    ],
+                    "pAlpha": {
+                        "in": {
+                            "val": 0
+                        },
+                        "init": 0.55
+                    },
+                    "pColor": {
+                        "in": {
+                            "val": [
+                                0,
+                                66,
+                                193
+                            ]
+                        },
+                        "init": [
+                            30,
+                            253,
+                            239
+                        ]
+                    },
+                    "pDuration": 0.3,
+                    "pScale": {
+                        "in": {
+                            "spline": "EASE_SOUND",
+                            "val": [
+                                1.8,
+                                1.8
+                            ]
+                        },
+                        "init": [
+                            0.5,
+                            0.5
+                        ]
+                    },
+                    "postRot": 9,
+                    "sheer": 1,
+                    "yShort": 4
+                },
+                {
+                    "type": "PTC_SINGLE",
+                    "alphaCut": 0.9,
+                    "anim": "ANI:shape.round#circle2",
+                    "brightness": 0.15,
+                    "followTarget": 1,
+                    "lighter": 1,
+                    "offset": [
+                        0,
+                        0,
+                        1.75
+                    ],
+                    "pAlpha": {
+                        "in": {
+                            "val": 0
+                        },
+                        "init": 0.55
+                    },
+                    "pColor": {
+                        "in": {
+                            "val": [
+                                0,
+                                66,
+                                193
+                            ]
+                        },
+                        "init": [
+                            30,
+                            253,
+                            239
+                        ]
+                    },
+                    "pDuration": 0.23333333333333334,
+                    "pRotate": {
+                        "in": {
+                            "spline": "EASE_OUT",
+                            "val": 64
+                        },
+                        "init": 0
+                    },
+                    "pScale": {
+                        "in": {
+                            "spline": "EASE_OUT_STRONG",
+                            "val": [
+                                1.5,
+                                1.5
+                            ]
+                        },
+                        "init": [
+                            0.5,
+                            0.5
+                        ]
+                    },
+                    "postRot": -11,
+                    "scaleVary": [
+                        0.2,
+                        0.2
+                    ],
+                    "sheer": 1,
+                    "yShort": 4
+                },
+                {
+                    "type": "PTC_SINGLE",
+                    "_skip": true,
+                    "alphaCut": 0.9,
+                    "anim": "ANI:shape.round#circle1",
+                    "cancelable": true,
+                    "followTarget": 1,
+                    "lighter": 1,
+                    "offset": [
+                        0,
+                        0,
+                        0.375
+                    ],
+                    "pAlpha": {
+                        "in": {
+                            "val": 0
+                        },
+                        "init": 0.55
+                    },
+                    "pColor": {
+                        "in": {
+                            "val": [
+                                0,
+                                66,
+                                193
+                            ]
+                        },
+                        "init": [
+                            30,
+                            253,
+                            239
+                        ]
+                    },
+                    "pDuration": 0.21666666666666667,
+                    "pScale": {
+                        "in": {
+                            "spline": "EASE_SOUND",
+                            "val": [
+                                0.7,
+                                0.7
+                            ]
+                        },
+                        "init": [
+                            0.5,
+                            0.5
+                        ]
+                    },
+                    "sheer": 1,
+                    "yShort": 4
+                },
+                {
+                    "type": "WAIT",
+                    "time": 0.25
+                },
+                {
+                    "type": "PTC_CIRCLE",
+                    "anim": "ANI:anim.shield#pShieldM",
+                    "cancelable": true,
+                    "followTarget": 1,
+                    "key": "shd",
+                    "lighter": 0.55,
+                    "endDist": 1,
+                    "moveDuration": 0.2,
+                    "moveRotate": -7,
+                    "rotWithTime": true,
+                    "startDist": 0.5,
+                    "offset": [
+                        0,
+                        0,
+                        0.9375
+                    ],
+                    "pDuration": -1,
+                    "pScale": {
+                        "in": {
+                            "time": 0.3,
+                            "val": [
+                                1,
+                                1
+                            ]
+                        },
+                        "init": [
+                            0,
+                            0
+                        ],
+                        "out": {
+                            "time": 0.2,
+                            "val": [
+                                0,
+                                0
+                            ]
+                        }
+                    },
+                    "numPtc": 8,
+                    "zOrder": 3
+                },
+                {
+                    "type": "PTC_CIRCLE",
+                    "anim": "ANI:anim.shield#pShieldT",
+                    "cancelable": true,
+                    "followTarget": 1,
+                    "key": "shd",
+                    "lighter": 0.55,
+                    "endDist": 0.95,
+                    "moveDuration": 0.2,
+                    "moveRotate": -7,
+                    "rotWithTime": true,
+                    "startDist": 0.5,
+                    "offset": [
+                        0,
+                        0,
+                        1.875
+                    ],
+                    "pDuration": -1,
+                    "pScale": {
+                        "in": {
+                            "time": 0.3,
+                            "val": [
+                                1,
+                                1
+                            ]
+                        },
+                        "init": [
+                            0,
+                            0
+                        ],
+                        "out": {
+                            "time": 0.2,
+                            "val": [
+                                0,
+                                0
+                            ]
+                        }
+                    },
+                    "angleStart": 22,
+                    "numPtc": 8,
+                    "zOrder": 3
+                },
+                {
+                    "type": "PTC_CIRCLE",
+                    "_skip": true,
+                    "anim": "ANI:anim.shield#pShieldM",
+                    "cancelable": true,
+                    "followTarget": 1,
+                    "key": "shd",
+                    "lighter": 0.55,
+                    "endDist": 0.8,
+                    "moveDuration": 0.2,
+                    "moveRotate": -7,
+                    "rotWithTime": true,
+                    "startDist": 0.5,
+                    "offset": [
+                        0,
+                        0,
+                        0.9375
+                    ],
+                    "pDuration": -1,
+                    "pScale": {
+                        "in": {
+                            "time": 0.3,
+                            "val": [
+                                1,
+                                1
+                            ]
+                        },
+                        "init": [
+                            0,
+                            0
+                        ],
+                        "out": {
+                            "time": 0.2,
+                            "val": [
+                                0,
+                                0
+                            ]
+                        }
+                    },
+                    "numPtc": 8
+                },
+                {
+                    "type": "PTC_CIRCLE",
+                    "_skip": true,
+                    "anim": "ANI:anim.shield#pShieldT",
+                    "cancelable": true,
+                    "followTarget": 1,
+                    "key": "shd",
+                    "lighter": 0.55,
+                    "endDist": 0.75,
+                    "moveDuration": 0.2,
+                    "moveRotate": -7,
+                    "rotWithTime": true,
+                    "startDist": 0.5,
+                    "offset": [
+                        0,
+                        0,
+                        1.875
+                    ],
+                    "pDuration": -1,
+                    "pScale": {
+                        "in": {
+                            "time": 0.3,
+                            "val": [
+                                1,
+                                1
+                            ]
+                        },
+                        "init": [
+                            0,
+                            0
+                        ],
+                        "out": {
+                            "time": 0.2,
+                            "val": [
+                                0,
+                                0
+                            ]
+                        }
+                    },
+                    "angleStart": 22,
+                    "numPtc": 8
+                },
+                {
+                    "type": "LOOP_START"
+                },
+                {
+                    "type": "WAIT",
+                    "time": 0.1
+                },
+                {
+                    "type": "LOOP_END"
+                },
+                {
+                    "type": "MOD_CIRCLE_PTC",
+                    "endDist": 0.6,
+                    "key": "shd",
+                    "moveDuration": 0.2
+                }
+            ],
+            "canHardStop": true
+        },
+        "shieldTestPre": {
+            "steps": [
+                {
+                    "type": "PTC_CIRCLE",
+                    "anim": "ANI:anim.shield#pShieldM",
+                    "cancelable": true,
+                    "followTarget": 1,
+                    "key": "shd",
+                    "lighter": 0.55,
+                    "endDist": 0.8,
+                    "moveDuration": 0.2,
+                    "moveRotate": -7,
+                    "rotWithTime": true,
+                    "startDist": 0.5,
+                    "offset": [
+                        0,
+                        0,
+                        0.9375
+                    ],
+                    "pDuration": -1,
+                    "pScale": {
+                        "in": {
+                            "time": 0.1,
+                            "val": [
+                                1,
+                                1
+                            ]
+                        },
+                        "init": [
+                            0,
+                            0
+                        ],
+                        "out": {
+                            "time": 0.2,
+                            "val": [
+                                0,
+                                0
+                            ]
+                        }
+                    },
+                    "numPtc": 8
+                },
+                {
+                    "type": "PTC_CIRCLE",
+                    "anim": "ANI:anim.shield#pShieldT",
+                    "cancelable": true,
+                    "followTarget": 1,
+                    "key": "shd",
+                    "lighter": 0.55,
+                    "endDist": 0.75,
+                    "moveDuration": 0.2,
+                    "moveRotate": -7,
+                    "rotWithTime": true,
+                    "startDist": 0.5,
+                    "offset": [
+                        0,
+                        0,
+                        1.875
+                    ],
+                    "pDuration": -1,
+                    "pScale": {
+                        "in": {
+                            "time": 0.1,
+                            "val": [
+                                1,
+                                1
+                            ]
+                        },
+                        "init": [
+                            0,
+                            0
+                        ],
+                        "out": {
+                            "time": 0.2,
+                            "val": [
+                                0,
+                                0
+                            ]
+                        }
+                    },
+                    "angleStart": 22,
+                    "numPtc": 8
+                },
+                {
+                    "type": "LOOP_START"
+                },
+                {
+                    "type": "WAIT",
+                    "time": 0.1
+                },
+                {
+                    "type": "LOOP_END"
+                },
+                {
+                    "type": "MOD_CIRCLE_PTC",
+                    "endDist": 0.6,
+                    "key": "shd",
+                    "moveDuration": 0.2
+                }
+            ]
+        },
+        "shieldBreak": {
+            "steps": [
+                {
+                    "type": "DISTORTION",
+                    "displacement": {
+                        "radius": {
+                            "in": {
+                                "val": 8
+                            },
+                            "init": 1,
+                            "out": {
+                                "val": 20
+                            }
+                        },
+                        "rotation": 0,
+                        "scale": [
+                            1,
+                            1
+                        ],
+                        "strength": 36.48
+                    },
+                    "displacementType": "RING",
+                    "handle": {
+                        "duration": 0,
+                        "fadeIn": 0.2,
+                        "fadeOut": 0.4
+                    },
+                    "offset": [
+                        0,
+                        0,
+                        1.25
+                    ],
+                    "over": true
+                },
+                {
+                    "type": "SHAKE_SCREEN",
+                    "dir": "VERTICAL",
+                    "power": "WEAK",
+                    "speed": "FASTEST",
+                    "duration": 0.1,
+                    "fadeOut": 0.3
+                },
+                {
+                    "type": "PLAY_SOUND",
+                    "settings": {
+                        "playback": {},
+                        "speed": 0.97,
+                        "type": "GAMEPLAY",
+                        "volume": 0.74
+                    },
+                    "sound": "media/audio/sfx/action/impact/puzzle/barrier-break.wav"
+                },
+                {
+                    "type": "PTC_SPHERE",
+                    "alphaCut": 0.8,
+                    "angleVary": 360,
+                    "anim": "ANI:small.dots#ruby1",
+                    "brightness": 0.9,
+                    "cancelable": true,
+                    "lighter": 1,
+                    "addEndDist": true,
+                    "endDist": [
+                        1,
+                        2.5
+                    ],
+                    "moveRotate": [
+                        0,
+                        -10
+                    ],
+                    "startDist": 0.85,
+                    "offset": [
+                        0,
+                        0,
+                        1.25
+                    ],
+                    "pAlpha": {
+                        "in": {
+                            "val": 0
+                        },
+                        "init": 1
+                    },
+                    "pColor": {
+                        "in": {
+                            "spline": "EASE_OUT",
+                            "val": [
+                                235,
+                                18,
+                                44
+                            ]
+                        },
+                        "init": [
+                            0,
+                            148,
+                            255
+                        ]
+                    },
+                    "pDuration": [
+                        0.31666666666666665,
+                        0.8
+                    ],
+                    "pRotate": {
+                        "in": {
+                            "val": 120
+                        },
+                        "init": 0
+                    },
+                    "pScale": {
+                        "in": {
+                            "val": [
+                                1,
+                                1
+                            ]
+                        },
+                        "init": [
+                            4,
+                            4
+                        ]
+                    },
+                    "sharpness": 0,
+                    "angleRange": 0,
+                    "circles": 3,
+                    "numPtc": 32,
+                    "uniRand": 0.5,
+                    "zRange": [
+                        -0.8,
+                        0.7
+                    ],
+                    "zScale": 1.6
+                },
+                {
+                    "type": "PTC_SPHERE",
+                    "alphaCut": 0.8,
+                    "anim": "ANI:small.dots#ruby1",
+                    "cancelable": true,
+                    "addEndDist": true,
+                    "endDist": 2,
+                    "moveRotate": [
+                        0,
+                        -2
+                    ],
+                    "ptcRotToDir": "PRECISE",
+                    "startDist": 0.85,
+                    "offset": [
+                        0,
+                        0,
+                        1.25
+                    ],
+                    "pAlpha": {
+                        "in": {
+                            "val": 0
+                        },
+                        "init": 1
+                    },
+                    "pColor": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "pDuration": [
+                        0.31666666666666665,
+                        0.4
+                    ],
+                    "pRotate": 45,
+                    "pScale": [
+                        4,
+                        4
+                    ],
+                    "sharpness": 0,
+                    "angleRange": 0,
+                    "circles": 3,
+                    "numPtc": 12,
+                    "uniRand": 0.5,
+                    "zRange": [
+                        -0.8,
+                        0.7
+                    ],
+                    "zScale": 1.6,
+                    "zOrder": 128
+                }
+            ]
+        },
+        "dmgGlow": {
+            "steps": [
+                {
+                    "type": "PTC_COVER",
+                    "_skip": true,
+                    "alphaCut": 0.95,
+                    "angleVary": 360,
+                    "anim": "ANI:small.dots#pixel2",
+                    "brightness": 0.35,
+                    "cut": "BEHIND_TARGET",
+                    "followTarget": 1,
+                    "lighter": 1,
+                    "endDist": -0.3,
+                    "pAlpha": {
+                        "in": {
+                            "val": 0
+                        },
+                        "init": 1
+                    },
+                    "pColor": {
+                        "in": {
+                            "val": [
+                                0,
+                                45,
+                                161
+                            ]
+                        },
+                        "init": [
+                            0,
+                            209,
+                            255
+                        ]
+                    },
+                    "pDuration": 0.1,
+                    "delay": 0.016666666666666666,
+                    "numPtc": 6,
+                    "repeat": true
+                },
+                {
+                    "type": "PTC_COVER",
+                    "_skip": true,
+                    "alphaCut": 0.95,
+                    "angleVary": 360,
+                    "anim": "ANI:shape.round#circle2",
+                    "brightness": 0.05,
+                    "cut": "BEHIND_TARGET",
+                    "followTarget": 1,
+                    "lighter": 1,
+                    "pAlpha": {
+                        "in": {
+                            "val": 0
+                        },
+                        "init": 0.35
+                    },
+                    "pColor": {
+                        "in": {
+                            "spline": "EASE_OUT",
+                            "val": [
+                                0,
+                                45,
+                                161
+                            ]
+                        },
+                        "init": [
+                            0,
+                            174,
+                            212
+                        ]
+                    },
+                    "pDuration": 0.3,
+                    "pScale": {
+                        "in": {
+                            "spline": "EASE_OUT_STRONG",
+                            "val": [
+                                0.1,
+                                0.15
+                            ]
+                        },
+                        "init": [
+                            0,
+                            0
+                        ]
+                    },
+                    "delay": 0.1,
+                    "numPtc": 24,
+                    "repeat": true,
+                    "spawnPos": [
+                        1,
+                        0
+                    ],
+                    "zOrder": 20
+                },
+                {
+                    "type": "FADE_COLOR",
+                    "brightness": 0.45,
+                    "color": [
+                        255,
+                        0,
+                        0
+                    ],
+                    "duration": 0.2,
+                    "fadeOut": 0.1,
+                    "lighter": 1
+                },
+                {
+                    "type": "PTC_CIRCLE",
+                    "alphaCut": 0.6,
+                    "anim": "ANI:shape.long#spike1",
+                    "followTarget": 1,
+                    "addEndDist": true,
+                    "ptcRotToDir": "FAST",
+                    "startDist": 0.5,
+                    "pAlpha": {
+                        "in": {
+                            "spline": "EASE_OUT",
+                            "val": 0
+                        },
+                        "init": 1
+                    },
+                    "pColor": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "pDuration": 0.25,
+                    "pScale": {
+                        "in": {
+                            "spline": "EASE_OUT",
+                            "val": [
+                                0.6,
+                                4
+                            ]
+                        },
+                        "init": [
+                            0.7,
+                            1
+                        ]
+                    },
+                    "scaleVary": [
+                        0,
+                        -0.7
+                    ],
+                    "numPtc": 5,
+                    "rotAxis": "SCREEN",
+                    "uniRand": 0.9,
+                    "zOrder": 128
+                },
+                {
+                    "type": "PTC_CIRCLE",
+                    "alphaCut": 0.95,
+                    "anim": "ANI:shape.round#circle2",
+                    "followTarget": 1,
+                    "pAlpha": {
+                        "in": {
+                            "val": 0
+                        },
+                        "init": 0.5
+                    },
+                    "pColor": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "pDuration": 0.2,
+                    "pScale": {
+                        "in": {
+                            "spline": "EASE_OUT",
+                            "val": [
+                                0.8,
+                                0.8
+                            ]
+                        },
+                        "init": [
+                            0.5,
+                            0.5
+                        ]
+                    },
+                    "numPtc": 1,
+                    "zOrder": 96
+                },
+                {
+                    "type": "PTC_CIRCLE",
+                    "alphaCut": 0.95,
+                    "angleVary": 360,
+                    "anim": "ANI:shape.round#circle1",
+                    "brightness": 0.45,
+                    "cut": "OVER_TARGET",
+                    "followTarget": 1,
+                    "lighter": 1,
+                    "pAlpha": {
+                        "in": {
+                            "val": 0
+                        },
+                        "init": 0.6
+                    },
+                    "pColor": [
+                        69,
+                        157,
+                        175
+                    ],
+                    "pDuration": 0.3,
+                    "pScale": {
+                        "in": {
+                            "val": [
+                                0.8,
+                                0.8
+                            ]
+                        },
+                        "init": [
+                            0,
+                            0
+                        ]
+                    },
+                    "duration": 0.3,
+                    "numPtc": 2,
+                    "repeat": true,
+                    "zOrder": 128
+                },
+                {
+                    "type": "PTC_CIRCLE",
+                    "alphaCut": 0.95,
+                    "angleVary": 360,
+                    "anim": "ANI:shape.round#circle1",
+                    "cut": "BEHIND_TARGET",
+                    "followTarget": 1,
+                    "lighter": 1,
+                    "pAlpha": {
+                        "in": {
+                            "val": 0
+                        },
+                        "init": 0.6
+                    },
+                    "pColor": [
+                        2,
+                        63,
+                        98
+                    ],
+                    "pDuration": 0.3,
+                    "pScale": {
+                        "in": {
+                            "val": [
+                                0.8,
+                                0.8
+                            ]
+                        },
+                        "init": [
+                            0,
+                            0
+                        ]
+                    },
+                    "duration": 0.3,
+                    "numPtc": 2,
+                    "repeat": true,
+                    "zOrder": 128
+                },
+                {
+                    "type": "PTC_COVER",
+                    "_skip": true,
+                    "alphaCut": 0.95,
+                    "angleVary": 360,
+                    "anim": "ANI:shape.round#circle1",
+                    "cut": "OVER_TARGET",
+                    "followTarget": 1,
+                    "lighter": 1,
+                    "endDist": -0.3,
+                    "pAlpha": {
+                        "in": {
+                            "val": 0
+                        },
+                        "init": 0.6
+                    },
+                    "pColor": [
+                        74,
+                        171,
+                        193
+                    ],
+                    "pDuration": 0.1,
+                    "pScale": [
+                        0.2,
+                        0.2
+                    ],
+                    "delay": 0.016666666666666666,
+                    "numPtc": 6,
+                    "repeat": true,
+                    "style": "MULTIPLY",
+                    "zOrder": 128
+                },
+                {
+                    "type": "LOOP_START"
+                },
+                {
+                    "type": "FADE_COLOR",
+                    "brightness": 0.4,
+                    "color": [
+                        237,
+                        155,
+                        58
+                    ],
+                    "duration": 0,
+                    "fadeIn": 0.1,
+                    "fadeOut": 0.1,
+                    "lighter": 0.4,
+                    "multiply": true
+                },
+                {
+                    "type": "WAIT",
+                    "time": 0.23333333333333334
+                },
+                {
+                    "type": "LOOP_END"
+                }
+            ]
+        }
+    }
+}
